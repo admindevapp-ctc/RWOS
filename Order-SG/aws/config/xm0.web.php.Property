@@ -1,0 +1,14 @@
+<?php
+
+$config['bcc'] = "h.m.ziaur.rahman.a2s@ap.denso.com";
+$config['cc'] = "h.m.ziaur.rahman.a2s_AWS@ap.denso.com";
+$config['path_PDF'] = "/data/DGAMS_ORD_LOG_XM0/PO_AWS/Temp/";
+$config['path_PDF_Backup'] = "/data/DGAMS_ORD_LOG_XM0/PO_AWS/Backup_PDF/";
+$config['from'] = "no-reply@denso.co.th";
+$config['POTemplate'] = "template/po_template/xm0_prtorderpdf.php"; //PO template
+$config['emailTemplate'] = "template/email_template/xm0_email.html";  //email template.
+$config['to'] = "h.m.ziaur.rahman.a2s@ap.denso.com";  // for Stock and MTO email
+$config['to1'] = "h.m.ziaur.rahman.a2s@ap.denso.com"; // for Stock and MTO email
+
+
+?>

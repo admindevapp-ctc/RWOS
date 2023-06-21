@@ -1,0 +1,986 @@
+/* Layout styles */
+
+html, body {height:100%}
+
+body {
+	padding: 0;
+	margin: 0;
+	color: #000000;
+	background-color: #FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+
+#isi{
+	margin: 0;
+	padding:0;
+	width: 100%;
+	font-size: 11px;
+	color: #000000;
+	background-color: #FFF;
+}
+#isi1{
+	margin: 0;
+	width: 100%;
+	font-size: 11px;
+	color: #000000;
+	background-color: #FFF;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 10px;
+}
+#isi h2 {
+	color: #999999;
+	margin: 4px 0 20px 0;
+	padding: 0 0 5px 0;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CA0000;
+	/**font-family: Arial, Helvetica, sans-serif;**/
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/*  2 column About Denso  */
+
+#twocolLeft{
+	float:left;
+	background-color: #FFF;
+	width: 171px;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	height: 450px;
+	background-image: url(../images/HBG.png);
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+}
+#twocolRight{
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-left: 5px;
+	
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 180px;	
+}
+
+#twocolRight1{
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-left: 5px;
+	height: auto;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+}
+
+
+/*  Horizontal menu for CSS */
+
+.hmenu{
+	width: 171px; /*width of menu*/
+	margin-top: 0px;
+	margin-left: 0px;
+	
+}
+
+.hmenu .headerbar{
+	font: bold 13px Verdana;
+	color: white; /*last 2 values are the x and y coordinates of bullet image*/
+	margin-bottom: 0; /*bottom spacing between header and rest of content*/
+	text-transform: uppercase; /*31px is left indentation of header text*/
+	background-color: #AD1D36;
+	background-image: url(../images/Profile.png);
+	background-repeat: no-repeat;
+	background-position: 8px 6px;
+	margin-left: 0px;
+	padding-top: 7px;
+	padding-right: 0;
+	padding-bottom: 7px;
+	padding-left: 31px;
+}
+
+.hmenu .headerbar1{
+	font: bold 13px Verdana;
+	color: white; /*last 2 values are the x and y coordinates of bullet image*/
+	margin-bottom: 0; /*bottom spacing between header and rest of content*/
+	text-transform: uppercase; /*31px is left indentation of header text*/
+	background-color: #AD1D36;
+	background-image: url(../images/password.png);
+	background-repeat: no-repeat;
+	background-position: 8px 6px;
+	margin-left: 0px;
+	padding-top: 7px;
+	padding-right: 0;
+	padding-bottom: 7px;
+	padding-left: 31px;
+}
+
+.hmenu .headerbar2{
+	font: bold 13px Verdana;
+	color: white; /*last 2 values are the x and y coordinates of bullet image*/
+	margin-bottom: 0; /*bottom spacing between header and rest of content*/
+	text-transform: uppercase; /*31px is left indentation of header text*/
+	background-color: #AD1D36;
+	background-image: url(../images/calendar.gif);
+	background-repeat: no-repeat;
+	background-position: 8px 6px;
+	margin-left: 0px;
+	padding-top: 7px;
+	padding-right: 0;
+	padding-bottom: 7px;
+	padding-left: 31px;
+}
+
+.hmenu .headerbar3{
+	font: bold 13px Verdana;
+	color: white; /*last 2 values are the x and y coordinates of bullet image*/
+	margin-bottom: 0; /*bottom spacing between header and rest of content*/
+	text-transform: uppercase; /*31px is left indentation of header text*/
+	background-color: #AD1D36;
+	background-image: url(../images/cata.png);
+	background-repeat: no-repeat;
+	background-position: 8px 6px;
+	margin-left: 0px;
+	padding-top: 7px;
+	padding-right: 0;
+	padding-bottom: 7px;
+	padding-left: 31px;
+}
+
+
+.hmenu .headerbaraws{
+	font: bold 13px Verdana;
+	color: white; /*last 2 values are the x and y coordinates of bullet image*/
+	margin-bottom: 0; /*bottom spacing between header and rest of content*/
+	text-transform: uppercase; /*31px is left indentation of header text*/
+	background-color: #AD1D36;
+	background-image: url(../images/AWS.png);
+	background-repeat: no-repeat;
+	background-position: 8px 6px;
+	margin-left: 0px;
+	padding-top: 7px;
+	padding-right: 0;
+	padding-bottom: 7px;
+	padding-left: 31px;
+}
+
+
+.hmenu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0; /*bottom spacing between each UL and rest of content*/
+	font-size: 11px;
+}
+
+.hmenu ul li{
+padding-bottom: 1px; /*bottom spacing between menu items*/
+}
+
+.hmenu ul li a{
+
+color: black;
+background: #E9E9E9;
+display: block;
+padding: 5px 0;
+line-height: 17px;
+padding-left: 8px; /*link text is indented 8px*/
+text-decoration: none;
+}
+
+.hmenu ul li a:visited{
+color: black;
+}
+
+.hmenu ul ul ul li  a{
+
+color: black;
+background: #e2e4e5;
+display: block;
+padding: 5px 0;
+line-height: 17px;
+padding-left: 30px; /*link text is indented 8px*/
+text-decoration: none;
+}
+
+.hmenu ul ul li a{
+
+color: black;
+background: #c1c4c5;
+display: block;
+padding: 5px 0;
+line-height: 17px;
+padding-left: 20px; /*link text is indented 8px*/
+text-decoration: none;
+}
+
+
+.hmenu  #normal{
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+}
+.hmenu ul li a:hover{ /*hover state CSS*/
+color: white;
+background: black;
+}
+.hmenu ul li a.active{ /*current CSS*/
+color: white;
+background: black;
+
+}
+.hmenu ul #current3 a{ /*current CSS*/
+color: white;
+background: black;
+border-top: 2px solid #FF0000;
+}
+.hmenu #current a{ /*current CSS*/
+color: white;
+background: black;
+}
+/* start 03/10/2019 Prachaya inphum CTC */
+.hmenu .disabled a{ /*disable CSS*/
+pointer-events: none;
+opacity: 0.4;
+background: #A2D9CE  ;
+}
+/* 03/10/2019 Prachaya inphum CTC end */
+
+.hmenu ul ul li a.active{ /*current CSS*/
+color: white;
+background: black;
+}
+
+
+
+
+#isidata #red a:hover{
+	font-family: 'Arial', 'Helvetica', 'Tahoma', 'Geneva', sans-serif;
+	font-size: 11px;
+	color: #F00;
+	text-decoration: none;
+}
+
+#twocolright p.f01 a{
+	color: #8d0808;
+	margin-bottom: 0; /*31px is left indentation of header text*/
+	font-family: Arial;
+	font-size: 11px;
+	font-weight: Bold;
+	padding-top: 2px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+#twocolright p.f02 {
+	color: #999999;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-bottom: 0px;
+	margin-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0;
+}
+.arial11 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000;
+}
+.arial11black {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000;
+}
+
+.arial11redbold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #B30000;
+}
+.arial11blackbold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000;
+}
+
+.arial11whitebold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #fff;
+}
+.arial11greybold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #999;
+}
+
+.arial11grey {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #999;
+}
+.arial11white {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #fff;
+}
+
+.arial11blue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #00F;
+}
+
+.arial21redbold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #B30000;
+}
+.arial12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+}
+.arial12Bold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: Bold;
+	color: #000;
+}
+
+.arial12BoldGrey {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: Bold;
+	color: #666;
+}
+
+
+#twocolright p.function{
+	color: #8d0808;
+	margin-bottom: 0; /*31px is left indentation of header text*/
+	background-image: url(../images/function.png);
+	background-repeat: no-repeat;
+	background-position: 0px 2px;
+	font-family: Arial;
+	font-size: 11px;
+	font-weight: Bold;
+	padding-top: 2px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 18px;
+}
+.bdr1{
+	border: 1px solid #FFF;	
+}
+
+.bdrleft{
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCC;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+}
+.bdrlast{
+	border: 1px solid #CCC;
+}
+
+
+#mainNav {
+	/*width: 770px;*/
+	height: 25px;
+	margin: 0;
+	padding:0;
+	background-color: #AD1D36;
+	/**background-image: url(../images/toolbarbg.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;**/
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+	clear: both;
+}
+
+#header {
+	margin: 0;
+	padding:0;
+	height: 54px;
+	background-color: #FFF;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+}
+#mainNav #kanan{
+	float:right;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+#mainNav ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /** width: 770px; */
+  height: 25px;
+ 
+}
+
+#mainNav ul li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+ 
+	
+}
+
+#mainNav ul li a {
+	float: left;
+	color: #FFF;
+	margin: 0;
+	padding: 4px 16px 0 16px;
+	text-decoration: none;
+	font-size: 11px;
+}
+
+#mainNav ul li a:hover {
+	padding: 4px 16px 0 16px;
+	height:25px;
+	text-decoration: none;
+	background-image: url(../images/bg2.gif);
+	background-repeat: repeat-x;
+	background-position: 0 0;
+}
+
+#mainNav  #current a{
+	color: Yellow;
+	text-decoration: none;
+	padding: 4px 16px 0 16px;
+	height:25px;
+	background-image: url(../images/bg2.gif);
+	background-repeat: repeat-x;
+	background-position: 0 0;
+}
+
+#mainNav a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#mainNav a:hover {
+	color: Yellow;
+	text-decoration: none;
+}
+
+
+/* footer Main */
+#footerMain1 {
+	height: 57px;
+	color: #A1A1A1;
+	clear:both;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+}
+
+#footerMain1 ul {
+	
+	list-style: none;
+	color: #AE0000;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #900;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0px;
+	padding-top: 3px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+
+#footerMain1 ul li {
+	display: inline;
+}
+
+#footerMain1 ul li a {
+	float: left;
+	border-right: 1px solid #A1A1A1;
+	padding: 0 5px;
+	color: #900;
+	line-height: 10px;
+}
+
+#footerMain1 ul li a:hover {
+	color: #000;
+}
+
+#footerMain1 ul li.last a {
+	border-right: none;
+}
+
+
+
+
+
+#footerMain1 #footerDesc p {
+	font-weight: bold;
+	text-align: left;
+	padding-left: 5px;
+}
+.function{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #CA0000;
+	font-weight: bold;	
+}
+#pagination  
+{
+	
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	
+}
+
+
+#pagination a 
+{
+	list-style: none;
+	margin-right: 5px;
+	padding:5px;
+	color:#333;
+	text-decoration: none;
+	background-color: #F3F3F3;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	
+}
+
+#pagination #search a
+{
+	list-style: none;
+	margin-left: 5px;
+	padding:5px;
+	background-color: #FFFFFF;
+	text-decoration: none;
+	
+}
+
+
+#pagination a:hover 
+{
+color:#FF0084;
+cursor: pointer;
+}
+
+#pagination a.current 
+{
+	list-style: none;
+	margin-right: 5px;
+	padding:5px;
+	color:#FFF;
+	background-color: #000;
+}
+
+#pagination1  
+{
+	margin-right: 15px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+#pagination1 a 
+{
+	list-style: none;
+	margin-right: 5px;
+	padding:5px;
+	color:#333;
+	text-decoration: none;
+	background-color: #F3F3F3;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+}
+#pagination1 a:hover 
+{
+color:#FF0084;
+cursor: pointer;
+}
+
+#pagination1 a.current 
+{
+	list-style: none;
+	margin-right: 5px;
+	padding:5px;
+	color:#FFF;
+	background-color: #000;
+}
+
+.tbl1 tr th{
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+}
+
+.tbl1 tr th.lastth{
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+	border-left-width: 1px;
+}
+.tbl1 tr td{
+	background-color: #F4F4F4;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+}
+.tbl1 tr td.lasttd{
+	background-color: #F4F4F4;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+	border-left-width: 1px;
+	font-weight: bold;
+}
+
+.tbl1 tr td.lastpg{
+	background-color: #FFF;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+	border-left-width: 1px;
+	font-weight: bold;
+}
+.tbl1 a:hover{
+	border: 1px solid #00F;
+}
+
+/* -------------------- */
+/* CLASSES */
+/* -------------------- */
+.asc{
+background:url(../images/asc.gif) no-repeat 10px 8px;
+text-indent:30px;
+display:block;
+}
+.desc{
+background:url(../images/desc.gif) no-repeat 10px 8px;
+text-indent:30px;
+display:block;
+}
+
+.PartAsc a{
+	text-decoration: none;
+	background-image: url(../images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	padding-left: 20px;
+	color: #000;
+}
+
+.PartAsc a:hover{
+	text-decoration: none;
+	background-image: url(../images/desc.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.PartDesc a{
+	text-decoration: none;
+	background-image: url(../images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	padding-left: 20px;
+	color: #000;
+}
+
+.PartDesc a:hover{
+	text-decoration: none;
+	background-image: url(../images/asc.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+a#ConvExcel {
+	text-decoration: none;
+    padding-left: 20px;
+	color: #00C;
+	font-size: 12px;
+}
+.exExcel a:hover{
+	text-decoration: none;
+	background-image: url(../images/excel.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	padding-left: 20px;
+	color: #F00;
+}
+
+/** Table For Order **/
+.tblorder tbody tr th{
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+}
+
+.tblorder tbody tr th.lastth{
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+	border-left-width: 1px;
+}
+.tblorder tbody tr td{
+	background-color: #F4F4F4;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+}
+.tblorder tbody tr td.lasttd{
+	background-color: #F4F4F4;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+	border-left-width: 1px;
+	font-weight: bold;
+}
+.tbl1 a:hover{
+	border: 1px solid #00F;
+}
+
+.tooltip {
+	display:none;
+	font-size:12px;
+	height:65px;
+	width:120px;
+	padding:25px;
+	color:#000;
+	background-color: transparent;
+	background-image: url(../images/white.png);
+}
+
+.uploadBox {
+/** width: 410px **/;
+	background: #ffffff;
+	padding:3px;
+	border:1px solid #bbbbbb;
+	-moz-border-radius:8px;
+	margin-top: 2px;
+	margin-right: 20px;
+	margin-bottom: 2px;
+	margin-left: auto;
+}
+
+.uploadBox a{  
+ position:absolute;
+ right:0px;
+ width:100px;
+}  
+
+.bar {
+    height: 10px;
+	background: green;
+	width:0%
+	
+}
+
+input.fileUpload {
+	background-image: url(../images/start.png); /* 16px x 16px */
+	background-color: transparent; /* make the button transparent */
+	background-repeat: no-repeat;  /* make the background image appear only once */
+	background-position: left center;  /* equivalent to 'top left' */
+	border: none;           /* assuming we don't want any borders */
+	cursor: pointer;        /* make the cursor like hovering over an <a> element */
+	height: 16px;           /* make this the size of your image */
+	width: 82px;
+	vertical-align: middle; /* align the text vertically centered */
+}
+input.fileUpload:hover {
+    background-image: url(../images/start.png);
+  
+}
+input.fileCancel {
+    background-image: url(../images/trash.png); /* 16px x 16px */
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 16px;
+    width: 82px;              /* make this the size of your image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+input.fileCancel:hover {
+    background-color: #999; /* make the button transparent */
+  
+}
+#resultTable{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	/**font-weight: bold;**/
+	color: #000;
+}
+#view a{
+    text-decoration: none;
+}
+#view  a:hover {
+    background-color: #999; /* make the button transparent */
+  
+}
+input.fileCancel1 {
+    background-image: url(../images/trash.png); /* 16px x 16px */
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 16px;
+    width: 82px;              /* make this the size of your image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+input.fileCancel1:hover {
+    background-color: #999; /* make the button transparent */
+  
+}
+
+.submit_button {
+	font-weight: bold;
+	/*background-color: #22ADBD;*/
+	color: #000;
+	/*padding:5px 10px 5px 10px;
+	border: 1px solid #666698;*/
+	width:90px;
+	height:25px;
+	/*background-color: #22ADBD;*/
+	background-image: url(images/ui-bg_highlight-soft_100_ddddee_1x100.png);
+	background-repeat: repeat-x;
+	background-position: 50% 50%;
+}
+legend
+{ /*#FFC6C6*/
+	color: #fff;
+	border: 1px solid #970000;
+	padding: 2px 6px;
+	font-weight: bold;
+	font-size:12px;
+	background-color: #970000;/*font-family: sans-serif*/
+}
+
+fieldset
+{
+	border: 1px solid #970000;
+	/*width: 25em;*/
+padding : 0.5em 1em;
+}
+.submit_buttoncp {
+	font-weight: bold;
+	font-size: 11px;
+
+	/*background-color: #22ADBD;*/
+	color: #000;
+	/*padding:5px 10px 5px 10px;
+	border: 1px solid #666698;*/
+	width:200px;
+	height:25px;
+	/*background-color: #22ADBD;*/
+	background-image: url(images/ui-bg_highlight-soft_100_ddddee_1x100.png);
+	background-repeat: repeat-x;
+	background-position: 50% 50%;
+	}
+

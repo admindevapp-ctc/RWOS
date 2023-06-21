@@ -1,0 +1,15 @@
+<?php
+
+$config['bcc'] = "h.m.ziaur.rahman.a2s@ap.denso.com";
+//$config['cc'] = "tidanan@ctc-g.co.th";
+$config['from'] = "no-reply@denso.co.th";
+$config['POTemplate'] = "template/sup_po_template/sup_vn0_prtorderpdf.php"; //PO template
+$config['emailTemplate'] = "template/sup_email_template/sup_vn0_email.html";  //email template.
+$config['to'] = "h.m.ziaur.rahman.a2s@ap.denso.com";  // for Stock and MTO email
+$config['to1'] = "h.m.ziaur.rahman.a2s@ap.denso.com"; // for Stock and MTO email
+
+
+$config['path_SUP_PDF'] = "/data/DGAMS_ORD_LOG_VN0/PO_email_sup/Temp/";
+$config['path_PDF_SUP_Backup'] = "/data/DGAMS_ORD_LOG_VN0/PO_email_sup/Backup_PDF/";
+
+?>

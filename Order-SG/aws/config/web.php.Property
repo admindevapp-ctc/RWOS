@@ -1,0 +1,7 @@
+<?php
+$config['bcc'] = "pleteera@gmail.com";//bcc
+$config['cc'] = "";
+$config['path_PDF'] = "/data/DGAMS_ORD_LOG/PO_email/Temp/";//path PDF
+$config['path_PDF_Backup'] = "/data/DGAMS_ORD_LOG/PO_email/Backup_PDF/";//path PDF after email sent.
+$config['from'] = "no-reply@denso.co.th";//path PDF after email sent.
+?>

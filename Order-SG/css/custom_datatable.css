@@ -1,0 +1,39 @@
+
+.pagination > li.active > a, .pagination > li.active > span :focus{
+	background-color:#AD1D36;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+	background-color:#AD1D36 !important;
+}
+.pagination>li>a, .pagination>li>span{
+	color:black !important;
+}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover{
+	color:black !important;
+}
+li.paginate_button.active>a{
+	color:white !important;
+}.tblanna tr th{
+	
+	padding: 0% 5px;
+
+}
+
+.tblanna tr th.lastth{
+
+	text-align: center;
+
+}
+
+.tblanna tr td{
+
+	padding: 0% 5px;
+
+}
+
+.tblanna tr td.lasttd{
+	
+	text-align: center;
+
+}
+

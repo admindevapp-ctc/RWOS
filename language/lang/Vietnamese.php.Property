@@ -1,0 +1,1085 @@
+<?php
+//L 310
+//E 34
+//W 25
+//G 16
+
+/* login.php*/	 
+#Print screvi	
+$lang['vi']['L0001'] = "ID của Đại Lý";
+$lang['vi']['L0002'] = "Mật khẩu";
+$lang['vi']['L0294'] = "Đăng nhập";
+$lang['vi']['L0302'] = "Ngôn ngữ";
+$lang['vi']['L0335'] = "Điền tên đăng nhập";
+$lang['vi']['L0336'] = "Điền mật khẩu";
+$lang['vi']['L0415'] = "Quốc gia"; // add by CTC
+
+
+#error message	
+$lang['vi']['W0022'] =	"Lỗi:";
+$lang['vi']['W0001'] =	"Tên người dùng hoặc mật khẩu sai";
+/* $lang['vig']['please_fill_the_password_field'] =	"Vui lòng điền "Mật khẩu"!"; */
+$lang['vi']['W0002'] =	"Vui lòng điền tên Người dùng";
+$lang['vi']['W0003'] =	"Vui lòng điền Mật khẩu!";
+$lang['vi']['W0004'] =	"Tên người dùng không hợp lệ, vui lòng kiểm tra lại!";
+$lang['vi']['W0005'] =	"Vui lòng điền tên Người dùng";
+$lang['vi']['W0006'] =	"Vui lòng điền Mật khẩu!";
+$lang['vi']['W0036'] =	"Lỗi: Trường Quốc gia sai. Vui lòng chọn chính xác!";
+
+	
+/* -------------------------------------------------------------------------------------- */	
+	
+	
+	
+/* main.php */	
+#Print screvi	
+$lang['vi']['L0003'] =	"Mã khách hàng";#php
+$lang['vi']['L0004'] =	"Tên khách hàng";#php
+$lang['vi']['L0005'] =	"Nhập Excel";#php
+$lang['vi']['L0006'] =	"Mới";#php
+$lang['vi']['L0007'] =	"Trạng thái";#php
+$lang['vi']['L0008'] =	"Ngày đặt hàng";#php
+$lang['vi']['L0009'] =	"Số PO";#php
+$lang['vi']['L0010'] =	"Mã đơn hàng DviSO";#php
+$lang['vi']['L0011'] =	"Giao đến";#php
+$lang['vi']['L0012'] =	"Kiểu đơn hàng";#php
+$lang['vi']['L0013'] =	"Thực hiện";#php
+$lang['vi']['L0014'] =	"In";#php
+$lang['vi']['L0015'] =	"Sửa";#php
+$lang['vi']['L0016'] =	"Xóa";#php
+$lang['vi']['L0306'] =	"Thời gian để đặt hàng cho ngày giao hàng hôm nay là";#php
+$lang['vi']['L0307'] =	"Thời gian còn lại để đặt hàng cho ngày giao hàng hôm nay";#php
+$lang['vi']['L0308'] =	"H";#php
+$lang['vi']['L0309'] =	"M";#php
+$lang['vi']['L0310'] =	"S";#php
+$lang['vi']['L0312'] =	"Dữ liệu không hợp lệ,chỉ cho phép 0-9,a-z, A-Z,-._";#php
+$lang['vi']['L0313'] =	"Vui lòng điền mã giao hàng";#php
+$lang['vi']['E0034'] =	'Lỗi: Số PO không thể chứa khoảng trắng, *|\":<>[\]{}#^`\\%().@&$ Và tiếng Việt';#php
+$lang['vi']['L0350'] =	'Ngày dự kiến giao hàng từ DviSO (ETD)';#php
+#ordering	
+#orderdata	
+$lang['vi']['L0017'] =	"Đặt hàng";#php
+$lang['vi']['L0018'] =	"Thông tin người dùng";#php
+$lang['vi']['L0019'] =	"Danh sách Mã phụ tùng";#php
+$lang['vi']['L0020'] =	"Đăng xuất";#php
+$lang['vi']['L0021'] =	"DỮ LIỆU ĐẶT HÀNG";#php
+$lang['vi']['L0022'] =	"Đơn hàng thường (Hàng có trong kho)";#php
+$lang['vi']['L0023'] =	"Đơn hàng chỉ định ngày giao hàng";#php
+$lang['vi']['L0024'] =	"Đơn hàng gấp";#php
+$lang['vi']['L0025'] =	"Đặt hàng trước";#php
+$lang['vi']['L0026'] =	"Lịch sử";#php
+$lang['vi']['L0027'] =	"TỔNG HỢP ĐƠN HÀNG";#php
+$lang['vi']['L0028'] =	"Theo chi tiết đơn hàng";#php
+$lang['vi']['L0029'] =	"Theo sản phẩm";#php
+$lang['vi']['L0030'] =	"Theo Đơn đặt hàng";#php
+$lang['vi']['L0031'] =	"Theo Mã phụ tùng";#php
+#error message	
+$lang['vi']['W0007'] =	"Bạn có chắc bạn muốn xóa dữ liệu này không?"; #javascript
+	
+#Print screvi	
+$lang['vi']['L0032'] =	"ĐƠN HÀNG MỚII";#php
+$lang['vi']['L0033'] =	"Đơn hàng chỉ định ngày giao hàng mới";#php
+$lang['vi']['L0034'] =	"Đơn hàng gấp mới";#php
+$lang['vi']['L0035'] =	"Đơn hàng Thông thường Mới";#php
+$lang['vi']['L0036'] =	"Tất cả các trường mẫu được yêu cầu";#php
+$lang['vi']['L0037'] =	"Mã khách hàng";#php
+$lang['vi']['L0038'] =	"Tên khách hàng";#php
+$lang['vi']['L0039'] =	"Mã đơn hàng DviSO";#php
+$lang['vi']['L0040'] =	"Ngày đặt hàng";#php
+$lang['vi']['L0041'] =	"Kiểu đơn hàng";#php
+$lang['vi']['L0042'] =	"Số PO";#php
+$lang['vi']['L0043'] =	"Giao đến";#php
+$lang['vi']['L0311'] =	"Địa chỉ giao hàng";#php
+$lang['vi']['L0044'] =	"Lưu Tiêu đề đơn hàng";#php
+$lang['vi']['L0045'] =	"Hủy";#php
+#error message	
+$lang['vi']['W0008'] =	"Mã PO phải gồm từ 2 đến 10 ký tự";#javascript
+
+	
+/* --------------------------------------------------------------------------------------- */	
+
+
+/* order2_new.php */
+#Print screvi 20	
+$lang['vi']['L0046'] =	"Đặt hàng";#php
+$lang['vi']['L0047'] =	"Thông tin người dùng";#php
+$lang['vi']['L0048'] =	"Danh sách Mã phụ tùng";#php
+$lang['vi']['L0049'] =	"Đăng xuất";#php
+$lang['vi']['L0050'] =	"Mã khách hàng";#php
+$lang['vi']['L0051'] =	"Giao đến";#php
+$lang['vi']['L0052'] =	"Ngày đặt hàng";#php
+$lang['vi']['L0053'] =	"Số PO";#php
+$lang['vi']['L0054'] =	"Kiểu đơn hàng";#php
+$lang['vi']['L0055'] =	"Tên khách hàng";#php
+$lang['vi']['L0056'] =	"Mã đơn hàng DviSO";#php
+$lang['vi']['L0057'] =	"Lưu mục Nhập đơn hàng";#php
+$lang['vi']['L0058'] =	"Đóng mục Nhập đơn hàng";#php
+$lang['vi']['L0059'] =	"Bộ";#php
+$lang['vi']['L0060'] =	"Mã phụ tùng";#php
+$lang['vi']['L0061'] =	"Số lượng";#php
+$lang['vi']['L0293'] =	"Số lượng đặt hàng";#php
+$lang['vi']['L0062'] =	"Đơn vị tiền tệ";#php
+$lang['vi']['L0063'] =	"Giá bán ";#php
+$lang['vi']['L0064'] =	"Tổng giá trị";#php
+$lang['vi']['L0065'] =	"Ngày giao hàng<br>(DD-MM-YYYY)";#php
+$lang['vi']['L0295'] =	"Thông báo lỗi";#php
+$lang['vi']['L0305'] =	"Chỉnh sửa bản ghi";#php
+
+
+
+#warning 4	
+$lang['vi']['G0001'] =	"Các mục đã chọn sẽ bị xóa vĩnh viễn và không thể khôi phục được. Bạn có chắc không?";
+$lang['vi']['G0002'] =	"Bạn có muốn đóng mà không lưu?";
+$lang['vi']['G0003'] =	"Vui lòng chọn ít nhất 1 tài liệu để xóa!";
+$lang['vi']['G0004'] =	"Không có giao dịch cần lưu. Vui lòng nhấn nút Đóng!";
+$lang['vi']['G0009'] =	"Mã phụ tùng phải bao gồm từ 2 đến 15 ký tự";
+$lang['vi']['G0010'] =	"Vui lòng chọn ít nhất 1 tài liệu để chỉnh sửa!";
+$lang['vi']['G0012'] =	"Vui lòng sử dụng nút Đóng để rời khỏi màn hình giao dịch!";
+$lang['vi']['G0017'] =	"không phải là hàng tồn kho hoặc Mã MTO";
+
+#dialog box 9	
+$lang['vi']['L0066'] =	"ĐƠN HÀNG MỚII";#php
+$lang['vi']['L0067'] =	"Đơn hàng chỉ định ngày giao hàng mới";#php
+$lang['vi']['L0068'] =	"Đơn hàng gấp mới";#php
+$lang['vi']['L0069'] =	"Mã phụ tùng";
+$lang['vi']['L0070'] =	"Số lượng đặt hàng";
+$lang['vi']['L0071'] =	"Tồn kho sẵn có";
+$lang['vi']['L0072'] =	"MTO";
+$lang['vi']['L0073'] =	"Lot size";
+$lang['vi']['L0074'] =	"Kiểm tra thông tin mã";
+$lang['vi']['L0075'] =	"Lưu chi tiết đơn hàng";
+$lang['vi']['L0076'] =	"Cancel";
+$lang['vi']['L0077'] =	"Xóa mục đã chọn";
+$lang['vi']['L0288'] =	"Có";
+$lang['vi']['L0289'] =	"Không";
+$lang['vi']['L0314'] =	"Đơn hàng đã được lưu thành công";
+$lang['vi']['L0315'] =	"PO đã được gửi tới email:";
+$lang['vi']['L0316'] =	"Gửi email không thành công";
+$lang['vi']['L0317'] =	"ĐỒNG Ý";
+$lang['vi']['E0037'] =	"Không tìm thấy địa chỉ email. Vui lòng liên hệ với DviSO hoặc vào mục Lịch sử để yêu cầu gửi lại PO";
+$lang['vi']['E0039'] =	"Không tìm thấy PDF. Vui lòng liên hệ với DviSO hoặc vào mục Lịch sử để yêu cầu gửi lại PO";
+	
+#error message 5	
+$lang['vi']['W0009'] =	"Vui lòng nhập Mã phụ tùng để kiểm tra";
+$lang['vi']['W0010'] =	"Số lượng phải lớn hơn 0";
+$lang['vi']['W0011'] =	"Nhấn vào đây để tải Mã phụ tùng";
+$lang['vi']['W0025'] =	"Lỗi: Số lượng phải được điền bằng số";
+$lang['vi']['W0023'] =	"Trường Số lượng chỉ cho phép: 0-9";
+	
+$lang['vi']['E0001'] =	"Lỗi: Đơn hàng Không theo lot size! Lot size = ";
+$lang['vi']['E0002'] =	"Lỗi: Không tìm thấy thông tin sản phẩm. Vui lòng liên hệ với DviSO PIC";
+$lang['vi']['E0023'] =	"Lỗi: Mã đặt hàng đã tồn tại";
+$lang['vi']['E0057'] =	"Lỗi: Không tìm thấy thông tin Lot sz. Vui lòng liên hệ với DviSO PIC";
+$lang['vi']['E0058'] =	"Lỗi: Mã đã dừng sản xuất. Vui lòng liên hệ với DviSO PIC";
+
+
+//$lang['vi']['E0011'] =	"Chỉnh sửa Bản ghi"
+//$lang['vi']['E0012'] =	"Lỗi Messahe!"
+//$lang['vi']['E0016'] =	"Hãy chọn ít nhất 1 tài liệu để chỉnh sửa!"
+
+
+/* ------------------------------------------------------------------------------------------------------------- */	
+
+
+
+#error message 5
+$lang['vi']['W0009'] = "Please key in part no to check";
+$lang['vi']['W0010'] = "Qty should be greater than 0";
+$lang['vi']['W0011'] = "Press here to load Part No";
+$lang['vi']['W0025'] = "Error: Qty should be filled by numeric";
+$lang['vi']['W0023'] = "Qty field only allow : 0-9";
+
+$lang['vi']['E0001'] = "Error : Order Not in Lot Size! Lot Size=";
+$lang['vi']['E0002'] = "Error : Item master was not found. Please contact DviSO PIC";
+$lang['vi']['E0023'] = "Error : Order Part No is found already";
+$lang['vi']['E0057'] = "Error : Lot size was not found. Please contact DviSO PIC";
+$lang['vi']['E0058'] = "Error : This is a Phase Out Part. Please contact DviSO PIC";
+
+
+#profile.php	
+#Print screvi	
+$lang['vi']['L0078'] =	"Đặt hàng";#php
+$lang['vi']['L0079'] =	"Thông tin người dùng";#php
+$lang['vi']['L0080'] =	"Danh sách Mã phụ tùng";#php
+$lang['vi']['L0081'] =	"Đăng xuất";#php
+//$lang['vi']['L0082'] =	"Thông tin người dùng";
+$lang['vi']['L0083'] =	"Mã khách hàng";
+$lang['vi']['L0084'] =	"Tên khách hàng";
+$lang['vi']['L0085'] =	"Đổi mật khẩu";
+$lang['vi']['L0086'] =	"Mật khẩu cũ";
+$lang['vi']['L0087'] =	"Xác nhận mật khẩu cũ";
+$lang['vi']['L0088'] =	"Mật khẩu mới";
+$lang['vi']['L0089'] =	"Đổi mật khẩu";
+#error message	
+$lang['vi']['W0012'] =	"*Phần bắt buộc";#javascript
+$lang['vi']['W0013'] =	"Mật khẩu cũ và Mật khẩu xác nhận không khớp";
+
+$lang['vi']['G0014'] =	"Yêu cầu thay đổi mật khẩu!";
+$lang['vi']['G0015'] =	"Mật khẩu của bạn đã được thay đổi";
+$lang['vi']['G0016'] =	"Quay lại màn hình chính";
+
+$lang['vi']['L0416'] =	"Quốc gia";// add by CTC
+
+
+	
+/* ---------------------------------------------------------------------------------------------- */	
+
+
+
+#main_item.php	
+#Print screvi	
+$lang['vi']['L0090'] =	"Đặt hàng";
+$lang['vi']['L0091'] =	"Thông tin người dùng";
+$lang['vi']['L0092'] =	"Danh sách Mã phụ tùng";
+$lang['vi']['L0093'] =	"Đăng xuất";
+$lang['vi']['L0094'] =	"Mã khách hàng";
+$lang['vi']['L0095'] =	"Tên khách hàng";
+$lang['vi']['L0096'] =	"Mã phụ tùng";
+$lang['vi']['L0097'] =	"Tên phụ tùng";
+$lang['vi']['L0098'] =	"Sản phẩm";
+$lang['vi']['L0099'] =	"Sản phẩm phụ";
+$lang['vi']['L0100'] =	"Lot size";
+$lang['vi']['L0101'] =	"Tiền tệ";
+$lang['vi']['L0102'] =	"Giá bán";
+$lang['vi']['L0103'] =	"Trước";
+$lang['vi']['L0104'] =	"Kế tiếp";
+$lang['vi']['L0105'] =	"Tìm kiếm";
+$lang['vi']['L0106'] =	"Tùy chọn tìm kiếm";
+$lang['vi']['L0107'] =	"Mã phụ tùng";
+$lang['vi']['L0295'] =	"Miêu tả";
+$lang['vi']['L0296'] =	"Sản phẩm";
+$lang['vi']['L0297'] =	"Tương đương";
+$lang['vi']['L0108'] =	"Chứa đựng";
+$lang['vi']['L0109'] =	"Tìm kiếm";
+$lang['vi']['L0111'] =	"Hủy bỏ";
+$lang['vi']['L0303'] =	"Tìm kiếm";
+$lang['vi']['L0304'] =	"Xuất dữ liệu vào file XLS";
+
+#warning	
+$lang['vi']['W0014'] =	"Vui lòng chọn trường để tìm kiếm";
+$lang['vi']['W0015'] =	"Vui lòng chọn tiêu chí để tìm kiếm";
+$lang['vi']['W0016'] =	"Vui lòng điền mô tả để tìm kiếm";
+
+/* ------------------------------------------------------------------------------------------- */	
+
+
+	
+#history.php	
+#Print screvi	
+$lang['vi']['L0112'] =	"Đặt hàng";
+$lang['vi']['L0113'] =	"Thông tin người dùng";
+$lang['vi']['L0114'] =	"Danh sách Mã phụ tùng";
+$lang['vi']['L0116'] =	"Đăng xuất";
+$lang['vi']['L0117'] =	"DỮ LIỆU ĐẶT HÀNG";
+$lang['vi']['L0118'] =	"Đơn hàng thường";
+$lang['vi']['L0119'] =	"Đơn hàng chỉ định ngày giao hàng";
+$lang['vi']['L0120'] =	"Đơn hàng gấp";
+$lang['vi']['L0121'] =	"Đặt hàng trước";
+$lang['vi']['L0122'] =	"Lịch sử";
+$lang['vi']['L0123'] =	"TỔNG HỢP ĐƠN HÀNG";
+$lang['vi']['L0124'] =	"Theo chi tiết đơn hàng";
+$lang['vi']['L0125'] =	"Theo sản phẩm";
+$lang['vi']['L0126'] =	"Theo Đơn đặt hàng";
+$lang['vi']['L0127'] =	"Theo Mã phụ tùng";
+$lang['vi']['L0300'] =	"Kiểu đơn hàng";
+$lang['vi']['L0301'] =	"Tất cả";
+$lang['vi']['L0128'] =	"Mã khách hàng";
+$lang['vi']['L0129'] =	"Tên khách hàng";
+$lang['vi']['L0130'] =	"Ngày đặt hàng";
+$lang['vi']['L0131'] =	"Số PO";
+$lang['vi']['L0132'] =	"Mã đơn hàng DviSO";
+$lang['vi']['L0133'] =	"Giao đến";
+$lang['vi']['L0134'] =	"Loại";
+$lang['vi']['L0135'] =	"Thực hiện";
+$lang['vi']['L0136'] =	"In";
+$lang['vi']['L0318'] =	"Vui lòng nhập địa chỉ email";
+$lang['vi']['L0319'] =	"Đến: ";
+$lang['vi']['L0320'] =	"Gửi email";
+$lang['vi']['L0321'] =	"Gửi email";
+$lang['vi']['L0322'] =	"Email đã được gửi thành công";
+$lang['vi']['L0323'] =	"E-mail";
+$lang['vi']['L0324'] =	"Gửi ";
+$lang['vi']['E0038'] =	"Email không chính xác, vui lòng nhập địa chỉ email chính xác";
+	
+/* -------------------------------------------------------------------------------------------------------------------- */	
+
+
+
+#prtorderpdf.php	
+#Print screvi	
+$lang['vi']['L0137'] =	"ĐƠN HÀNG CỦA ĐẠI LÝ";
+$lang['vi']['L0138'] =	"Khách hàng";
+$lang['vi']['L0139'] =	"Giao đến";
+$lang['vi']['L0140'] =	"Số PO";
+$lang['vi']['L0141'] =	"Mã đơn hàng";
+$lang['vi']['L0142'] =	"Loại đơn hàng";
+$lang['vi']['L0143'] =	"Ngày đặt hàng";
+$lang['vi']['L0144'] =	"Mã phụ tùng";
+$lang['vi']['L0145'] =	"Tên phụ tùng";
+$lang['vi']['L0146'] =	"Số lượng";
+$lang['vi']['L0147'] =	"Giá bán (USD)";
+$lang['vi']['L0148'] =	"Tổng (USD)";
+
+
+
+/* ------------------------------------------------------------------------------- */	
+
+
+#import_order_new.php	
+#Print screvi	
+$lang['vi']['L0149'] =	"Đặt hàng";#php
+$lang['vi']['L0150'] =	"Thông tin người dùng";#php
+$lang['vi']['L0151'] =	"Danh sách Mã phụ tùng";#php
+$lang['vi']['L0152'] =	"Đăng xuất";#php
+$lang['vi']['L0153'] =	"DỮ LIỆU ĐẶT HÀNG";#php
+$lang['vi']['L0154'] =	"Đơn hàng thường";#php
+$lang['vi']['L0155'] =	"Đơn hàng chỉ định ngày giao hàng";#php
+$lang['vi']['L0156'] =	"Đơn hàng gấp";#php
+$lang['vi']['L0157'] =	"Đơn hàng dặt trước";#php
+$lang['vi']['L0158'] =	"Lịch sử";#php
+$lang['vi']['L0159'] =	"TỔNG HỢP ĐƠN HÀNG";#php
+$lang['vi']['L0160'] =	"Theo chi tiết đơn hàng";#php
+$lang['vi']['L0161'] =	"Theo sản phẩm";#php
+$lang['vi']['L0162'] =	"Theo Đơn đặt hàng";#php
+$lang['vi']['L0163'] =	"Theo Mã phụ tùng";#php
+$lang['vi']['L0164'] =	"Tải đơn hàng lên hệ thống";#php
+$lang['vi']['L0290'] =	"Tải đơn hàng lên hệ thống";#php
+$lang['vi']['L0291'] =	"Tải đơn hàng lên hệ thống";#php
+$lang['vi']['L0292'] =	"Tải đơn hàng lên hệ thống";#php
+$lang['vi']['L0165'] =	"Mã khách hàng";#php
+$lang['vi']['L0166'] =	"Giao đến";#php
+$lang['vi']['L0167'] =	"Kiểu đơn hàng";#php
+$lang['vi']['L0168'] =	"Tên khách hàng";#php
+$lang['vi']['L0169'] =	"Vui lòng tải lên tệp excel của bạn (.xls) - nếu bạn đang sử dụngexcel 2007 trở lên, bạn nên chuyển đổi sang excel 2003 (định dạng xls):";#php
+$lang['vi']['L0170'] =	"Download định dạng excel tại đây";#php
+$lang['vi']['L0171'] =	"Duyệt…";
+$lang['vi']['L0172'] =	"Nhập";
+
+	
+$lang['vi']['G0011'] =	"Vui lòng điền mục Giao đến!";
+	
+#warning	
+$lang['vi']['W0017'] =	"Vui lòng đính kèm tệp tải lên!";#javascript
+
+
+#import_new.php	
+#Print screvi	
+$lang['vi']['L0173'] =	"Đặt hàng";#php
+$lang['vi']['L0174'] =	"Thông tin người dùng";#php
+$lang['vi']['L0175'] =	"Danh sách Mã phụ tùng";#php
+$lang['vi']['L0176'] =	"Đăng xuất";#php
+$lang['vi']['L0177'] =	"DỮ LIỆU ĐẶT HÀNG";#php
+$lang['vi']['L0178'] =	"Đơn hàng thường";#php
+$lang['vi']['L0179'] =	"Đơn hàng chỉ định ngày giao hàng";#php
+$lang['vi']['L0180'] =	"Đơn hàng gấp";#php
+$lang['vi']['L0181'] =	"Đơn hàng dặt trước";#php
+$lang['vi']['L0182'] =	"Lịch sử";#php
+$lang['vi']['L0183'] =	"TỔNG HỢP ĐƠN HÀNG";#php
+$lang['vi']['L0184'] =	"Theo chi tiết đơn hàng";#php
+$lang['vi']['L0185'] =	"Theo sản phẩm";#php
+$lang['vi']['L0186'] =	"Theo Đơn đặt hàng";#php
+$lang['vi']['L0187'] =	"Theo Part Number";#php
+$lang['vi']['L0189'] =	"Tải lên đơn hàng gấp";#php
+$lang['vi']['L0190'] =	"Thời gian để đặt hàng cho ngày giao hàng hôm nay đã hết.";#php
+$lang['vi']['L0191'] =	"Mã khách hàng";#php
+$lang['vi']['L0192'] =	"Tên khách hàng";#php
+$lang['vi']['L0193'] =	"Đã nhập xong";#php
+$lang['vi']['L0194'] =	"Tổng số bản ghi đã nhập";#php
+
+$lang['vi']['L0197'] =	"ngày đặt hàng";
+$lang['vi']['L0198'] =	"Số PO";
+$lang['vi']['L0199'] =	"Mã phụ tùng";
+$lang['vi']['L0200'] =	"Số lượng";
+$lang['vi']['L0201'] =	"Mô tả lỗi";
+$lang['vi']['L0202'] =	"Tiến hành tải lên";
+$lang['vi']['L0203'] =	"Hủy bỏ";
+
+#error	
+$lang['vi']['W0021'] =	"Cảnh báo (có thể tải lên)";#php
+$lang['vi']['E0017'] =	"Lỗi (không thể tải lên)";#php
+
+$lang['vi']['E0020'] =	"Lỗi: Không đúng Lot size! <br/>";#php
+$lang['vi']['E0021'] =	"Lỗi: Số lượng phải bằng số và lớn hơn 0! <br/>";#php
+$lang['vi']['E0003'] =	"Lỗi: Chỉ cho phép 1 mã PO! <br/>";#php
+$lang['vi']['E0004'] =	"Lỗi: Mã PO đã được tìm thấy trong lịch sử đặt hàng! <br/>";#php
+$lang['vi']['E0005'] =	"Lỗi: Không thể nhập đơn đặt hàng khẩn cấp vào Ngày lễ.Vui lòng liên hệ với DviSO PIC <br/>";#php
+$lang['vi']['E0006'] =	"Lỗi: Không tìm thấy lịch, Vui lòng liên hệ với DviSO PIC <br/>";#php
+$lang['vi']['E0007'] =	"Lỗi: Đây là mã đã dừng sản xuất. Vui lòng liên hệ với DviSO PIC <br/>";#php
+$lang['vi']['E0008'] =	"Lỗi: Không tìm thấy Giá Bán. Vui lòng liên hệ với DviSO PIC <br/>";#php
+$lang['vi']['E0009'] =	"Lỗi: Không tìm thấy Dữ liệu của mã. Vui lòng liên hệ với DviSO PIC <br/>";#php
+$lang['vi']['E0010'] =	"Lỗi: PO phải được điền và không quá 10 ký tự! <br/>";#php
+$lang['vi']['E0011'] =	"Lỗi: Mã phụ tùng đã tồn tại! <br/>";#php
+$lang['vi']['E0012'] =	"Lỗi: Mô tả <br/>";#php
+$lang['vi']['E0013'] =	"Bạn nên chọn tệp excel không quá 2 mb";#php
+$lang['vi']['E0014'] =	"VUI LÒNG SỬA LẠI PO CỦA BẠN BẰNG CÁCH XÓA Mã phụ tùng KHỎI TỆP EXCEL VÀ THỬ TẢI LẠI";
+$lang['vi']['E0018'] =	"HỆ THỐNG SẼ CHỈ XỬ LÝ PO CỦA BẠN KHI TẤT CẢ CÁC Mã phụ tùng ĐƯỢCĐĂNG KÝ NHÂN VIÊN DviSO PHỤ TRÁCH VÀ GIÁ BÁN";#php
+$lang['vi']['E0019'] =	"VUI LÒNG LƯU Ý, CHỈ 1 PO CHO 1 LẦN TẢI LÊN";#php
+$lang['vi']['E0022'] =	"Sản phẩm bạn đặt không thuộc danh mục tồn kho, DviSO PIC sẽ liên hệ với bạn trong thời gian ngắn";#php
+$lang['vi']['E0033'] =	"Lỗi: Mã phụ tùng này không thể bán! <br>";#php
+$lang['vi']['E0056'] =	"Lỗi: Không tìm thấy lot size. Vui lòng liên hệ với DviSO PIC <br>";#php
+
+
+//$lang['vi']['error_you_are_ordering_non_stock_item'] ="Sản phẩm bạn đặt không thuộc danh mục tồn kho, DviSO PIC sẽ liên hệ với bạntrong thời gian ngắn";
+//$lang['vi']['message_from_webpage'] =	"Tin nhắn từ trang web";
+//$lang['vi']['please_attach_ypload_file'] ="Vui lòng đính kèm tệp tải lên!"
+//$lang['vi']['ok'] =	"ĐỒNG Ý"
+//$lang['vi']['system_will_only_process_your_po_whvi_all_part_number_are_registered_in_dias_with_sales_price'] =	"HỆ THỐNG SẼ CHỈ XỬ LÝ PO CỦA BẠN KHI TẤT CẢ CÁC Mã phụ tùng ĐƯỢCĐĂNG KÝ NHÂN VIÊN DviSO PHỤ TRÁCH VÀ ""GIÁ BÁN";
+//$lang['vi']['please_take_note_only_1_po_number_allowed_for_1_upload_file'] =	"VUI LÒNG LƯU Ý, CHỈ 1 PO CHO 1 LẦN TẢI LÊN";
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */	
+
+
+
+#mainrpt.php	
+$lang['vi']['L0204'] =	"Đặt hàng";#php
+$lang['vi']['L0205'] =	"Thông tin người dùng";#php
+$lang['vi']['L0206'] =	"Danh sách Mã phụ tùng";#php
+$lang['vi']['L0207'] =	"Đăng xuất";#php
+$lang['vi']['L0208'] =	"Mã khách hàng";#php
+$lang['vi']['L0209'] =	"Tên khách hàng";#php
+$lang['vi']['L0210'] =	"Ngày đặt hàng từ";#php
+$lang['vi']['L0211'] =	"Ngày đặt hàng đến";#php
+$lang['vi']['L0212'] =	"Tìm thấy";#php
+$lang['vi']['L0213'] =	"Tìm kiếm";#php
+$lang['vi']['L0214'] =	"Xuất sang XLSX";#php
+$lang['vi']['L0215'] =	"Mã phụ tùng";#php
+$lang['vi']['L0216'] =	"Tên phụ tùng";#php
+$lang['vi']['L0217'] =	"Số PO";#php
+$lang['vi']['L0298'] =	"Bằng";#php
+$lang['vi']['L0299'] =	"Chứa đựng";#php
+$lang['vi']['L0218'] =	"Giao đến";#php
+$lang['vi']['L0219'] =	"Ngày đặt hàng";#php
+$lang['vi']['L0220'] =	"Ngày giao hàng yêu cầu";#php
+$lang['vi']['L0221'] =	"Số lượng";#php
+$lang['vi']['L0222'] =	"Người dùng";#php
+$lang['vi']['L0223'] =	"Trước";#php
+$lang['vi']['L0224'] =	"Kế tiếp";#php
+$lang['vi']['L0225'] =	"Tìm kiếm";#php
+#warning	
+$lang['vi']['G0005'] =	"Mục Đến ngày phả lớn hơn mục Từ ngày!";#php
+#error	
+$lang['vi']['W0018'] =	"Vui lòng chọn trường để tìm kiếm"; #javascript"
+$lang['vi']['W0019'] =	"Vui lòng chọn tiêu chí để tìm kiếm"; #javascript"
+$lang['vi']['W0020'] =	"Vui lòng điền mô tả để tìm kiếm"; #javascript"
+
+
+
+/* ----------------------------------------------------------------------------------- */	
+
+#mainrptproduct.php	
+#print screvi	
+//$lang['vi']['dviso'] =	"DviSO";
+$lang['vi']['L0226'] =	"Đặt hàng";#php
+$lang['vi']['L0227'] =	"Thông tin người dùng";#php
+$lang['vi']['L0228'] =	"Danh sách Mã phụ tùng";#php
+$lang['vi']['L0229'] =	"Đăng xuất";#php
+$lang['vi']['L0230'] =	"Mã khách hàng";#php
+$lang['vi']['L0231'] =	"Tên khách hàng";#php
+$lang['vi']['L0232'] =	"Ngày đặt hàng từ";#php
+$lang['vi']['L0233'] =	"Ngày đặt hàng đến";#php
+$lang['vi']['L0234'] =	"Tìm";#php
+$lang['vi']['L0235'] =	"Số lượng";#php
+$lang['vi']['L0236'] =	"SỐ TIỀN";#php
+$lang['vi']['L0237'] =	"TỔNG CỘNG";#php
+$lang['vi']['L0238'] =	"Sản phẩm";#php
+$lang['vi']['L0239'] =	"Sản phẩm phụ";#php
+$lang['vi']['L0240'] =	"Số PO";#php
+$lang['vi']['L0241'] =	"Ngày đặt hàng";#php
+$lang['vi']['L0242'] =	"Số lượng";#php
+$lang['vi']['L0243'] =	"Số tiền";#php
+
+#error	
+$lang['vi']['G0006'] =	"Mục Đến ngày phải lớn hơn mục Từ ngày!" ;#php
+
+
+/* ----------------------------------------------------------------------------------------- */	
+
+
+#mainrptpo.php	
+#print screvi	
+$lang['vi']['L0244'] =	"Đặt hàng";#php
+$lang['vi']['L0245'] =	"Thông tin người dùng";#php
+$lang['vi']['L0246'] =	"Danh sách Mã phụ tùng";#php
+$lang['vi']['L0247'] =	"Đăng xuất";#php
+$lang['vi']['L0248'] =	"Mã  khách hàng";#php
+$lang['vi']['L0249'] =	"Tên khách hàng";#php
+$lang['vi']['L0250'] =	"Ngày đặt hàng từ";#php
+$lang['vi']['L0251'] =	"Ngày đặt hàng đến";#php
+$lang['vi']['L0252'] =	"Số PO" ;#php
+$lang['vi']['L0253'] =	"Xuất sang XLS";#php
+$lang['vi']['L0254'] =	"TỔNG CỘNG";#php
+$lang['vi']['L0255'] =	"Số lượng";#php
+$lang['vi']['L0256'] =	"SỐ TIỀN";#php
+$lang['vi']['L0257'] =	"Tiền Tệ";#php
+$lang['vi']['L0258'] =	"Số PO";#php
+$lang['vi']['L0259'] =	"Sản phẩm phụ";#php
+$lang['vi']['L0260'] =	"Kiểu đơn hàng";#php
+$lang['vi']['L0261'] =	"Ngày đặt hàng";#php
+$lang['vi']['L0262'] =	"Số lượng";#php
+$lang['vi']['L0263'] =	"Số lượng (USD)";#php
+$lang['vi']['L0264'] =	"Ngày giao hàng";#php
+#warning	
+$lang['vi']['G0007'] =	"Mục Đến ngày phải lớn hơn mục Từ ngày!";#javascript
+
+
+
+/* --------------------------------------------------------------------- */	
+
+	
+#mainrptitem.php	
+#print screvi	
+$lang['vi']['L0265'] =	"Đặt hàng";#php
+$lang['vi']['L0266'] =	"Thông tin người dùng";#php
+$lang['vi']['L0267'] =	"Danh sách Mã phụ tùng";#php
+$lang['vi']['L0268'] =	"Đăng xuất";#php
+$lang['vi']['L0269'] =	"Mã khách hàng";#php
+$lang['vi']['L0270'] =	"Tên khách hàng";#php
+$lang['vi']['L0271'] =	"Ngày đặt hàng từ";#php
+$lang['vi']['L0272'] =	"Ngày đặt hàng đến";#php
+$lang['vi']['L0273'] =	"Mã phụ tùng";#php
+$lang['vi']['L0274'] =	"Tìm";#php
+$lang['vi']['L0275'] =	"Tổng cộng";#php
+$lang['vi']['L0276'] =	"Số lượng";#php
+$lang['vi']['L0277'] =	"Số tiền";#php
+$lang['vi']['L0278'] =	"Tiền tệ";#php
+$lang['vi']['L0279'] =	"Tổng cộng";#php
+$lang['vi']['L0280'] =	"Mã phụ tùng";#php
+$lang['vi']['L0281'] =	"Sản phẩm";#php
+$lang['vi']['L0282'] =	"Sản phẩm phụ";#php
+$lang['vi']['L0283'] =	"Số PO";#php
+$lang['vi']['L0284'] =	"Ngày dặt hàng";#php
+$lang['vi']['L0285'] =	"Số lượng";#php
+$lang['vi']['L0286'] =	"Số tiền(USD)";#php
+$lang['vi']['L0287'] =	"Ngày giao hàng";#php
+#error	
+$lang['vi']['G0008'] =	"Mục Đến ngày phải lớn hơn mục Từ ngày";#php
+	
+#checkIsHoliday.php	
+$lang['vi']['E0035'] =	"Lỗi: Ngày giao hàng trùng Ngày lễ DviSO";#php
+	
+#checkIsHolidayShoppingcart.php	
+$lang['vi']['E0049'] =	"Ngày đgiao  hàng trùng vào ngày lễ";#php
+$lang['vi']['E0059'] =	"Không tìm thấy lịch, Vui lòng liên hệ với DviSO PIC";#php
+	
+#checkMTO.php	
+$lang['vi']['W0024'] =	"Cảnh báo: Bạn đang đặt hàng mã MTO, DviSO PIC sẽ liên hệ với bạn trong thời gian ngắn";
+$lang['vi']['E0024'] =	"Lỗi: Bạn đang đặt hàng mã MTO, DviSO PIC sẽ liên hệ với bạn trong thời gian ngắn";
+	
+#checkStock.php	
+$lang['vi']['E0025'] =	"Lỗi: Sản phẩm bạn đặt hàng không thuộc danh mục tồn kho. Vui lòng liên hệ với DviSO PIC";
+$lang['vi']['W0026'] =	"Cảnh báo: Sản phẩm bạn đặt hàng không thuộc danh mục tồn kho, DviSO PIC sẽ liên hệ với bạn trong thời gian ngắn";
+$lang['vi']['E0036'] =	"Lỗi: Sản phẩm bạn đặt hàng không thuộc danh mục tồn kho. Vui lòng liên hệ với DviSO PIC";
+$lang['vi']['W0027'] =	"Cảnh báo: Sản phẩm bạn đặt hàng không thuộc danh mục tồn kho, DviSO PIC sẽ liên hệ với bạn trong thời gian ngắn";
+	
+#chklogin.php	
+$lang['vi']['G0013'] =	"Người dùng khác đăng nhập bằng tài khoản của bạn !!";
+	
+#getDueDate.php	
+$lang['vi']['E0026'] =	"Lỗi: Không tìm thấy lịch, Vui lòng liên hệ với DviSO PIC";
+	
+#getRequestDueDate.php	
+$lang['vi']['E0027'] =	"Lỗi: Không tìm thấy lịch, Vui lòng liên hệ với DviSO PIC";
+	
+#getUrgvitDueDate.php	
+$lang['vi']['E0028'] =	"Lỗi: Không thể nhập đơn hàng gấp vào Ngày lễ. Vui lòng liên hệ với DviSO PIC";
+$lang['vi']['E0029'] =	"Lỗi: Không tìm thấy lịch, Vui lòng liên hệ với DviSO PIC";
+	
+#getUrgvitOrderQty.php	
+$lang['vi']['E0029'] =	"Số lượng đặt hàng phải nhỏ hơn 5 hoặc thử lại sau 10:00 sáng";
+$lang['vi']['E0030'] =	"Lỗi: Bạn chỉ được phép đặt hàng";
+$lang['vi']['E0031'] =	"hoặc thử lại sau 10:00 sáng";
+$lang['vi']['E0032'] =	"Lỗi: Số lượng đặt hàng phải nhỏ hơn 20 đối với Đại lý bán lẻ";
+
+
+#timecheck.php	
+#$lang['vi']['W0028'] = "Please be informed, Urgvit order can not be inputted from 10:00am-11:59pm.";
+#CTC-Get time disable function from database 17/09/2020
+$lang['vi']['W0028'] = "Không thể nhập đơn đặt hàng gấp từ @strDis-@vidDis";
+	
+#navUser.php	
+$lang['vi']['L0325'] =	"Catalog sản phẩm";
+$lang['vi']['L0333'] =	"Thông tin sản phẩm. (Khu vực)";
+$lang['vi']['M0001'] =	"Order Mviu<br/>(Non Dviso)";
+$lang['vi']['M0002'] =  "Supplier Catalogue";
+$lang['vi']['M0003'] =  "Order History Report";
+$lang['vi']['M0004'] =  "History";
+//AWS
+$lang['vi']['M0009'] = "2 <sup>nd</sup> Customer Approval";
+$lang['vi']['M0010'] = "Leadtime Setting";
+$lang['vi']['M0011'] = "2 <sup>nd</sup> Customer Group MA";
+$lang['vi']['M0012'] = "2 <sup>nd</sup> Customer Sales Condition MA(DENSO)";
+$lang['vi']['M0013'] = "2 <sup>nd</sup> Customer Sales Condition MA(NON-DENSO)";
+$lang['vi']['M0014'] = "2 <sup>nd</sup> Customer Summary Order";
+	
+#Marquee	
+$lang['vi']['L0326'] =	"Thông báo";
+$lang['vi']['L0327'] =	"Tiêu đề";
+$lang['vi']['L0328'] =	"Chi tiết";
+$lang['vi']['L0329'] =	"Ngày bắt đầu";
+$lang['vi']['L0330'] =	"Ngày kết thúc";
+$lang['vi']['L0332'] =	"Cập nhật ngày tháng";
+	
+#Marquee	
+$lang['vi']['L0331'] =	"Không tìm thấy dữ liệu .... Vui lòng thử lại!";
+	
+#Note	
+$lang['vi']['L0334'] =	"Ghi chú";
+
+
+/* --------------------------------------------------------------------- */	
+	
+#cata_cataloguemain.php	
+#Print screvi	
+$lang['vi']['L0337'] =	"Mã khách hàng";
+$lang['vi']['L0338'] =	"Tên khách hàng";
+$lang['vi']['L0339'] =	"Giỏ hàng";
+$lang['vi']['L0340'] =	"Chọn nhà sản xuất";
+$lang['vi']['L0341'] =	"Chọn model";
+$lang['vi']['L0342'] =	"Lựa chọn loại";
+$lang['vi']['L0343'] =	"Tìm kiếm theo thương hiệu và nhóm sản phẩm";
+$lang['vi']['L0344'] =	"Tìm kiếm bởi…";
+$lang['vi']['L0345'] =	"Nhập để tìm kiếm";
+$lang['vi']['L0346'] =	"Xuất sang XLSX";
+$lang['vi']['L0347'] =	"Nhà sản xuất ô tô";
+$lang['vi']['L0348'] =	"Tên Model";
+$lang['vi']['L0349'] =	"Mã Model";
+$lang['vi']['L0351'] =	"CC.";
+$lang['vi']['L0352'] =	"Ngày bắt đầu";
+$lang['vi']['L0353'] =	"Ngày kết thúc";
+$lang['vi']['L0354'] =	"Mã chính hãng (Cũ)";
+$lang['vi']['L0355'] =	"Mã chính hãng (Hiện tại)";
+$lang['vi']['L0356'] =	"Mã DviSO (Cũ)";
+$lang['vi']['L0357'] =	"Mã DviSO";
+$lang['vi']['L0358'] =	"Mã CG (Cũ)";
+$lang['vi']['L0359'] =	"Mã CG";
+$lang['vi']['L0360'] =	"Tên phụ tùng";
+$lang['vi']['L0361'] =	"Lot size";
+$lang['vi']['L0362'] =	"Ghi chú";
+$lang['vi']['L0363'] =	"Hình ảnh";
+$lang['vi']['L0364'] =	"Thêm vào giỏ hàng";
+$lang['vi']['L0365'] =	"Chi tiết";
+$lang['vi']['L0366'] =	"Thêm vào giỏ hàng Thành công!";
+$lang['vi']['L0367'] =	"Xác nhận chỉnh sửa?";
+$lang['vi']['L0368'] =	"Xác nhận để xóa?";
+$lang['vi']['L0369'] =	"Xóa thành công!";
+$lang['vi']['L0370'] =	"Thông tin chi tiết sản phẩm";
+$lang['vi']['L0371'] =	"Thêm mới";
+$lang['vi']['L0372'] =	"ĐỒNG Ý";
+$lang['vi']['L0373'] =	"Hủy bỏ";
+$lang['vi']['L0374'] =	"Đóng";
+$lang['vi']['L0420'] =	"Mã động cơ";
+$lang['vi']['L0423'] =	"Mã chính hãng";
+$lang['vi']['L0424'] =	"Mã DviSO";
+$lang['vi']['L0425'] =	"Mã CG";
+$lang['vi']['L0426'] =	"Mã đặt hàng";
+$lang['vi']['L0427'] =	"Tìm kiếm";
+$lang['vi']['L0428'] =	"Cài đặt lại";
+$lang['vi']['L0429'] =	"Thêm vào giỏ hàng";
+$lang['vi']['L0430'] =	"Chi tiết";
+$lang['vi']['L0431'] =	"Hình ảnh";
+$lang['vi']['L0432'] =	"Thêm vào";
+$lang['vi']['L0433'] =	"Tẩy";
+$lang['vi']['L0434'] =	"Sửa";
+$lang['vi']['L0435'] =	"Dữ liệu Catalogue";
+	
+/* --------------------------------------------------------------------- */	
+	
+#cata_shoppingcartmain.php	
+#Print screvi	
+$lang['vi']['L0375'] =	"Mã khách hàng";
+$lang['vi']['L0376'] =	"Tên khách hàng";
+$lang['vi']['L0377'] =	"Tạo đơn hàng";
+$lang['vi']['L0378'] =	"Mã phụ tùng";
+$lang['vi']['L0379'] =	"Tiền tệ";
+$lang['vi']['L0380'] =	"Giá bán";
+$lang['vi']['L0381'] =	"Số lượng";
+$lang['vi']['L0382'] =	"Số tiền";
+$lang['vi']['L0383'] =	"Tổng mặt hàng";
+$lang['vi']['L0384'] =	"Tổng số lượng";
+$lang['vi']['L0385'] =	"Tổng cộng";
+$lang['vi']['L0436'] =	"Giỏ hàng";
+$lang['vi']['L0437'] =	"Model";
+	
+/* --------------------------------------------------------------------- */	
+	
+#_cata_shopping_request_modal.php	
+#Print screvi	
+$lang['vi']['L0386'] =	"Mã khách hàng";
+$lang['vi']['L0387'] =	"Tên khách hàng";
+$lang['vi']['L0388'] =	"Ngày đặt hàng";
+$lang['vi']['L0389'] =	"Mã đơn hàng DviSO";
+$lang['vi']['L0390'] =	"Ngày dự kiến giao hàng từ DviSO (ETD)";
+$lang['vi']['L0391'] =	"Loại đơn hàng";
+$lang['vi']['L0392'] =	"Số PO";
+$lang['vi']['L0393'] =	"Giao đến";
+$lang['vi']['L0394'] =	"Địa chỉ giao đến";
+$lang['vi']['L0395'] =	"Ghi chú";
+$lang['vi']['L0396'] =	"Lưu tiêu đề đơn hàng";
+$lang['vi']['L0421'] =	"Lưu ý: Không được phép chọn nhiều điểm Giao đến trong một PO. Vui lòngchia PO theo từng điểm Giao đến";
+$lang['vi']['L0422'] =	"Thông báo lỗi";
+	
+/* --------------------------------------------------------------------- */	
+	
+#order_vitry.php	
+#Print screvi	
+$lang['vi']['L0397'] =	"Mã khách hàng";
+$lang['vi']['L0398'] =	"Tên khách hàng";
+$lang['vi']['L0399'] =	"Giao đến";
+$lang['vi']['L0400'] =	"Địa chỉ giao đến";
+$lang['vi']['L0401'] =	"Ngày đặt hàng";
+$lang['vi']['L0402'] =	"Mã đơn hàng Dviso";
+$lang['vi']['L0403'] =	"Số PO";
+$lang['vi']['L0404'] =	"Ngày giao hàng được yêu cầu";
+$lang['vi']['L0405'] =	"Loại đơn hàng";
+$lang['vi']['L0406'] =	"Ghi chú";
+$lang['vi']['L0407'] =	"Mã phụ tùng";
+$lang['vi']['L0408'] =	"Tiền tệ";
+$lang['vi']['L0409'] =	"Giá";
+$lang['vi']['L0410'] =	"Số lượng";
+$lang['vi']['L0411'] =	"Số tiền";
+$lang['vi']['L0412'] =	"Ngày đến hạn (DD-MM-YYYY)";
+$lang['vi']['L0413'] =	"Lưu mục nhập đơn hàng";
+$lang['vi']['L0414'] =	"Đóng mục nhập đơn hàng";
+$lang['vi']['L0418'] =	"Đơn hàng mới";
+$lang['vi']['L0419'] =	"Chi tiết đơn hàng yêu cầu ngày giao hàng";
+	
+#error	
+$lang['vi']['E0040'] =	"Đơn hàng Không theo lot size!, Lot Size ={lotsize}";
+$lang['vi']['E0041'] =	"Không tìm thấy giá hoặc mặt hàng";
+$lang['vi']['E0042'] =	"Không tìm thấy dữ liệu .... Vui lòng thử lại!";
+$lang['vi']['E0043'] =	"Vui lòng chọn/nhập điều kiện tìm kiếm";
+$lang['vi']['E0044'] =	"Số PO phải gồm từ 2 đến 10 ký tự";
+$lang['vi']['E0045'] =	"Số PO không được chứa khoảng trắng, *|\":<>[\]{}#^`\\%().@&$ Và tiếng Vietnamese";
+$lang['vi']['E0046'] =	"Đã tìm thấy PO, Sử dụng chỉnh sửa hoặc tạo PO mới";
+$lang['vi']['E0047'] =	"Vui lòng điền mã Giao đến!";
+$lang['vi']['E0048'] =	"Đã tìm thấy mã đơn hàng DviSO, Vui lòng làm mới trang và thử lại.";
+	
+$lang['vi']['E0050'] =	"Vui lòng chọn mã Giao đến";
+$lang['vi']['E0051'] =	"Tất cả các mục được yêu cầu";
+$lang['vi']['E0052'] =	"Ngày giao hàng không hợp lệ";
+$lang['vi']['E0053'] =	"Dữ liệu không hợp lệ. Chỉ cho phép 0-9, a-z, A-Z, -, _";
+$lang['vi']['E0054'] =	"Không tìm thấy giá cho Mã và giao hàng đến '{shipto}'";
+$lang['vi']['E0055'] =	"Đã tìm thấy lỗi, Vui lòng kiểm tra.";
+
+
+/* --------------------------------------------------------------------- */
+
+#ctc_cookie.php.php
+$lang['vi']['L0438'] = "Trang web này sử dụng cookie để cải thiện trải nghiệm của bạn trên trang web của chúng tôi. Bằng cách nhấp vào “Chấp nhận tất cả cookie”, bạn đồng ý với việc sử dụng cookie của chúng tôi";
+$lang['vi']['L0439'] = "Chấp nhận tất cả cookie";
+
+
+/* --------------------------------------------------------------------- */
+
+
+#supcata_cataloguemain.php
+$lang['vi']['L0440'] = "Select Brand";
+
+
+#supmainrpt.php
+$lang['vi']['L0441'] = "Customer Code";
+$lang['vi']['L0442'] = "Supplier Code";
+
+#supcata_cataloguemain.php
+$lang['vi']['L0443'] = "Supplier";
+$lang['vi']['L0444'] = "Select Supplier";
+$lang['vi']['L0445'] = "Brand";
+$lang['vi']['L0446'] = "VIN Code";
+$lang['vi']['L0447'] = "Stock";
+$lang['vi']['L0448'] = "Standard Price";
+
+
+$lang['vi']['L0449'] = "Please select";
+$lang['vi']['L0450'] = "Upload";
+$lang['vi']['L0451'] = "Supplier Number";
+$lang['vi']['L0452'] = "Supplier Name";
+$lang['vi']['L0453'] = "Supplier Part No.";
+$lang['vi']['L0454'] = "Shipping Day (ETD)";
+$lang['vi']['E0060'] = "No Data Found....";
+
+$lang['vi']['L0455'] = "Supplier Part No.";
+
+
+
+//Mviu Supplier
+$lang['vi']['MH01'] = "SUPPLIER";
+$lang['vi']['MH02'] = "SUMMARY ORDER";
+$lang['vi']['M005'] = "Customer Detail";
+$lang['vi']['M006'] = "Sale Price";
+$lang['vi']['M007'] = "Catalogue Maintviance";
+$lang['vi']['M008'] = "Stock";
+$lang['vi']['M009'] = "Announcemvit";
+$lang['vi']['M010'] = "Order History";
+
+
+#supmaincus
+$lang['vi']['L0456'] = "Search Information";
+$lang['vi']['L0457'] = "Company Code";
+$lang['vi']['L0458'] = "Customer";
+$lang['vi']['L0459'] = "Shipto";
+$lang['vi']['L0460'] = "Customer Name";
+$lang['vi']['L0461'] = "Address1";
+$lang['vi']['L0462'] = "Address2";
+$lang['vi']['L0463'] = "Address3";
+
+
+
+$lang['vi']['L0464'] = "Item Number";
+$lang['vi']['L0465'] = "Currvicy";
+$lang['vi']['L0466'] = "Sales Price";
+$lang['vi']['L0467'] = "Action";
+
+
+$lang['vi']['L0468'] = "Download format csv here:";
+
+$lang['vi']['L0469'] = "Only CSV file is allowed.";
+$lang['vi']['L0470'] = "File type";
+$lang['vi']['L0471'] = "First row for header";
+$lang['vi']['L0472'] = "File type";
+$lang['vi']['L0473'] = "Yes";
+$lang['vi']['L0474'] = "No";
+$lang['vi']['L0475'] = "Add and Replace Partial";
+$lang['vi']['L0476'] = "Replace All (Delete All first)";
+$lang['vi']['L0477'] = "Submit";
+$lang['vi']['L0478'] = "Reset";
+$lang['en']['L0479'] = "Note : System will delete all existing records at frist and then upload all records from CSV";
+
+
+$lang['vi']['E0061'] = "Error : Only CSV file is allowed,please download CSV format and upload again";
+
+
+#Announcemvit
+$lang['vi']['L0480'] = "Title";
+$lang['vi']['L0481'] = "Detail";
+$lang['vi']['L0482'] = "Customer Number";
+$lang['vi']['L0483'] = "Effective Date From";
+$lang['vi']['L0484'] = "Effective Date To";
+$lang['vi']['L0485'] = "Update By";
+$lang['vi']['L0486'] = "Picture(Size: 855x153 pixel)";
+$lang['vi']['L0487'] = "Save";
+$lang['vi']['L0488'] = "* = required";
+$lang['vi']['L0489'] = "view all";
+$lang['vi']['L0490'] = "Add New";
+$lang['vi']['L0491'] = "Update";
+$lang['vi']['L0492'] = "Due Date";
+$lang['vi']['L0493'] = "Order Date From";
+$lang['vi']['L0494'] = "Order Date To";
+$lang['vi']['L0495'] = "All Announcemvit";
+$lang['vi']['L0496'] = "Update Date";
+$lang['vi']['L0497'] = "Find";
+
+
+$lang['vi']['L0498'] = "Car Information";
+$lang['vi']['L0499'] = "Genuine Part No.Information";
+$lang['vi']['L0500'] = "Order Part No. Information";
+$lang['vi']['L0501'] = "Car Maker";
+$lang['vi']['L0502'] = "Model Name";
+$lang['vi']['L0503'] = "VIN Code ";
+$lang['vi']['L0504'] = "Model Code ";
+$lang['vi']['L0505'] = "vigine Code";
+$lang['vi']['L0506'] = "CC.";
+$lang['en']['L0507'] = "Start Date (dd/mm/yyyy)";
+$lang['en']['L0508'] = "End Date (dd/mm/yyyy)";
+$lang['vi']['L0509'] = "Genuine Part No.";
+$lang['vi']['L0510'] = "Supplier Part No.";
+$lang['vi']['L0511'] = "Part Name";
+$lang['vi']['L0512'] = "Product Brand";
+$lang['vi']['L0513'] = "Order Part No.";
+$lang['vi']['L0514'] = "Lot size";
+$lang['vi']['L0515'] = "Stock info ";
+$lang['vi']['L0516'] = "Remark";
+$lang['vi']['L0517'] = "Stock/Non Stock Item";
+$lang['vi']['L0518'] = "Part Picture";
+$lang['vi']['L0519'] = "QTY";
+
+
+$lang['vi']['W9001'] = "Please Enter Title";
+$lang['vi']['W9002'] = "Please Enter Detail";
+$lang['vi']['W9003'] = "Please Input Customer";
+$lang['vi']['W9004'] = "Please Enter Start Date";
+$lang['vi']['W9005'] = "Please Enter End Date";
+$lang['vi']['W9006'] = "Please Enter Update by";
+$lang['vi']['W9007'] = "Please Select Image File";
+$lang['vi']['W9008'] = "Sorry, your file is too large.";
+$lang['vi']['W9009'] = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+$lang['vi']['W9010'] = "new record succesfully inserted ...";
+$lang['vi']['W9011'] = "error while inserting....";
+$lang['vi']['W9012'] = "Please type Title";
+$lang['vi']['W9013'] = "Please type detail";
+$lang['vi']['W9014'] = "yyyy/mm/dd";
+$lang['vi']['W9015'] = "Enter Name";
+
+
+$lang['vi']['W9016'] = "Please Enter Car Maker";
+$lang['vi']['W9017'] = "Please Enter Model Name";
+$lang['vi']['W9018'] = "Please Enter Model Code";
+$lang['vi']['W9019'] = "Please Enter Part Name";
+$lang['vi']['W9020'] = "Please Enter Product Brand";
+$lang['vi']['W9021'] = "Please Enter Order Part No.";
+$lang['vi']['W9022'] = "Please Enter Lot size more than 0";
+$lang['vi']['W9023'] = "Please Enter Lot size";
+$lang['vi']['W9024'] = "Length of ";
+$lang['vi']['W9025'] = " character.";
+$lang['vi']['W9026'] = " must be ";
+$lang['vi']['W9027'] = " must be between ";
+$lang['vi']['W9028'] = " and ";
+
+
+$lang['vi']['E0063'] = "not found shipto";
+$lang['vi']['E0064'] = "Error - supprice not found";
+$lang['vi']['E0065'] = "Error - supprice found";
+$lang['vi']['E0066'] = "Error - supstock  not found";
+$lang['vi']['E0067'] = "Error - Order Part No already found";
+$lang['vi']['E0068'] = "Error File Type, Only allow CSV File";
+$lang['vi']['E0069'] = "Duplicate Data, Please Recheck again";
+$lang['vi']['E0070'] = "Note : Data not upload to system";
+$lang['vi']['E0071'] = " connot be null,Please Recheck again";
+$lang['vi']['E0072'] = " Error: Duplicate Part Number ,Please Recheck again";
+$lang['vi']['E0073'] = " Error: Duplicate Part Number  and Customer No and Shipto ,Please Recheck again ";
+$lang['vi']['E0074'] = "LotSize should more than 0, Please Recheck again";
+$lang['vi']['E0075'] = "Please Recheck again";
+$lang['vi']['E0076'] = "Error -customer  not found";
+$lang['vi']['E0077'] = "Price should be Numeric value";
+$lang['vi']['E0078'] = "connot be null";
+$lang['vi']['E0079'] = " Error : Only XLS file is allowed, please download XLS format and upload again.";
+
+$lang['vi']['L0520'] = "partno";
+$lang['vi']['L0521'] = "Upload again";
+$lang['vi']['L0522'] = "Cusno";
+$lang['vi']['L0523'] = "curr";
+$lang['vi']['L0524'] = "price";
+$lang['vi']['L0525'] = "shipto";
+
+$lang['vi']['L0526'] = "CarMaker";
+$lang['vi']['L0527'] = "ModelName";
+$lang['vi']['L0528'] = "PrtPic";
+$lang['vi']['L0529'] = "ModelCode";
+$lang['vi']['L0530'] = "EngineCode";
+$lang['vi']['L0531'] = "Cc";
+$lang['vi']['L0532'] = "StartDate";
+$lang['vi']['L0533'] = "EndDate";
+$lang['vi']['L0534'] = "Genuine Part No.";
+$lang['vi']['L0535'] = "SupplierGenuine Part No.";
+$lang['vi']['L0536'] = "Order Part No.";
+$lang['vi']['L0537'] = "PartName";
+$lang['vi']['L0538'] = "VINcode";
+$lang['vi']['L0539'] = "Lotsize";
+$lang['vi']['L0540'] = "Brand";
+$lang['vi']['L0541'] = "MTO";
+$lang['vi']['L0542'] = "Remark";
+$lang['vi']['L0527'] = "Do you want to Upload data?";
+$lang['vi']['L0528'] = "Supplier Upload";
+$lang['vi']['L0529'] = "Add New Record";
+$lang['vi']['L0530'] = "Edit Record";
+$lang['vi']['L0531'] = "Part Catalogue Maintenance (Add New)";
+$lang['vi']['L0532'] = "Part Catalogue Maintenance (Update)";
+
+
+$lang['vi']['L0533'] = "Enter Car Maker";
+$lang['vi']['L0534'] = "Enter Model Name";
+$lang['vi']['L0535'] = "Enter Vin Code";
+$lang['vi']['L0536'] = "Enter Model Code";
+$lang['vi']['L0537'] = "Enter Engine Code";
+$lang['vi']['L0538'] = "Enter Cc.";
+$lang['vi']['L0539'] = "Enter Start Date";
+$lang['vi']['L0540'] = "Enter End Date";
+$lang['vi']['L0541'] = "Enter Genuine Part No.";
+$lang['vi']['L0542'] = "Enter Supplier Part No.";
+$lang['vi']['L0543'] = "Enter Part Name";
+$lang['vi']['L0544'] = "Enter Product Brand";
+$lang['vi']['L0545'] = "Enter Order Part No.";
+$lang['vi']['L0546'] = "Enter Lot size";
+$lang['vi']['L0547'] = "Enter Remark";
+$lang['vi']['L0548'] = "All form fields are required.";
+$lang['en']['L0549'] = "Successfully Updated ...";
+$lang['en']['L0550'] = "Sorry Data Could Not Updated !";
+
+
+$lang['en']['L0551'] = "Supplier Part Catalogue";
+$lang['vi']['L0552'] = "Customer Name";
+$lang['vi']['L0553'] = "All";
+$lang['vi']['L0554'] = "The removed customer will no longer show this anouncement";
+$lang['vi']['L0555'] = "Please select customer";
+$lang['vi']['L0556'] = "Ship Date";
+$lang['vi']['L0557'] = "Ship qty";
+$lang['vi']['L0558'] = "Invoice No";
+$lang['vi']['L0559'] = "Status";
+$lang['vi']['L0561'] = "List (Base) Price";
+$lang['vi']['L0562'] = "Discount Ratio";
+$lang['vi']['L0563'] = "Actual Sales Price";
+
+
+$lang['vi']['W0029'] = "Customer Number & 1st Customer is the same, Please check data again";
+
+$lang['vi']['L0564'] = "Order Approve Status";
+$lang['en']['W0030'] = "* If uncheck means this item will not sell to those 2nd Customer Group";
+$lang['vi']['L0565'] = "Shipping Day (ETD)";
+
+$lang['vi']['L0566'] = "Pending";
+$lang['vi']['L0567'] = "Grand Total";
+$lang['vi']['L0568'] = "Quantity";
+$lang['vi']['L0569'] = "Amount";
+$lang['vi']['L0570'] = "AWS";
+$lang['vi']['L0571'] = "Denso Order No.";
+
+$lang['vi']['L0572'] = "AWS Curr";
+$lang['vi']['L0573'] = "AWS Price";
+$lang['vi']['L0574'] = "Dealer Curr";
+$lang['vi']['L0575'] = "Dealer Price";
+$lang['vi']['L0576'] = "Error Message";
+
+$lang['vi']['L0577'] = "(Direct ship from supplier)";
+$lang['vi']['L0578'] = "(Ship from own warehouse)";
+
+$lang['vi']['L0579'] = "Approve 1";
+$lang['vi']['L0580'] = "Approve 2";
+$lang['vi']['L0581'] = "Reject";
+
+$lang['vi']['L0582'] = "1 <sup>st</sup> Customer Standard Leadtime(Day)";
+$lang['vi']['L0583'] = "Calendar";
+$lang['vi']['L0584'] = "Standard Leadtime";
+$lang['vi']['L0585'] = "Day(s)";
+$lang['vi']['L0586'] = "Check Holiday";
+$lang['vi']['L0587'] = "Not Check Holiday";
+$lang['vi']['L0588'] = "2 <sup>nd</sup> Customer Code";
+$lang['vi']['L0589'] = "Customer Group";
+$lang['vi']['L0590'] = "2 <sup>nd</sup> Customer Group";
+$lang['vi']['L0591'] = "Customer CD.";
+$lang['vi']['L0592'] = "1 <sup>st</sup>Customer Code";
+$lang['vi']['L0593'] = "Ship to address";
+$lang['vi']['L0594'] = "1 <sup>st</sup>Customer Ship to Code";
+$lang['vi']['L0595'] = "2 <sup>nd</sup>Customer Ship to Code";
+$lang['vi']['L0596'] = "2 <sup>nd</sup>Customer Name";
+$lang['vi']['L0597'] = "Condition";
+$lang['vi']['L0598'] = "Please Search Data";
+$lang['vi']['L0599'] = "Ship to Code";
+$lang['vi']['L0600'] = "Address";
+$lang['vi']['L0601'] = "Ship From";
+
+$lang['vi']['E0081'] = "Error : customer ship to code not found in aws customer master. Please contact Denso PIC";
+$lang['vi']['E0082'] = "Error : customer ship to code [2nd customer ship to code] not found in aws customer master. Please contact Denso PIC";
+$lang['vi']['E0083'] = "Error : customer ship to code [1st customer ship to code] not found in ship to master. Please contact Denso PIC";
+
+$lang['vi']['L0602'] = "Note: The system does not allow to select multiple ship to in one PO, please separate PO for each ship to";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

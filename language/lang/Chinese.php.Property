@@ -1,0 +1,886 @@
+<?php
+
+//L 310
+//E 34
+//W 25
+//G 16
+
+/* login.php */
+#Print screen
+$lang['ch']['L0001'] = "用戶名";
+$lang['ch']['L0002'] = "密碼";
+$lang['ch']['L0294'] = "登錄!";
+$lang['ch']['L0302'] = "語言";#
+
+#error message
+$lang['en']['W0022'] = "Error:";
+$lang['en']['W0001'] = "wrong user name or password";
+/* $lang['Eng']['please_fill_the_password_field'] = "Please fill the password field!"; */
+$lang['en']['W0002'] = "User name should be filled";
+$lang['en']['W0003'] = "Please fill the password field!";
+$lang['en']['W0004'] = "Invalid User Name, please check again!";
+$lang['en']['W0005'] = "User Name should be filled";
+$lang['en']['W0006'] = "Please fill the password field!";
+
+
+/* -------------------------------------------------------------------------------------- */
+
+
+
+/* main.php */
+#Print screen
+$lang['en']['L0003'] = "Customer Number";#php
+$lang['en']['L0004'] = "Customer Name";#php
+$lang['en']['L0005'] = "IMPORT";
+$lang['en']['L0006'] = "NEW";
+$lang['en']['L0007'] = "Status";
+$lang['en']['L0008'] = "Order Date";#php
+$lang['en']['L0009'] = "PO Number";#php
+$lang['en']['L0010'] = "DENSO Order Number";#php
+$lang['en']['L0011'] = "Ship To";#php
+$lang['en']['L0012'] = "Type";#php
+$lang['en']['L0013'] = "Action";#php
+$lang['en']['L0014'] = "print";#php
+$lang['en']['L0015'] = "edit";#php
+$lang['en']['L0016'] = "delete";#php
+$lang['en']['L0306'] = "Time to place order for today delivery is:";#php
+$lang['en']['L0307'] = "Time to place order for today delivery is left: ";#php
+$lang['en']['L0308'] = "H ";#php
+$lang['en']['L0309'] = "M";#php
+$lang['en']['L0310'] = "S";#php
+
+$lang['en']['E0034'] = 'Error: PO Number can not contain space, / , \\*/';#php
+
+#ordering
+#orderdata
+$lang['en']['L0017'] = "Ordering";#php
+$lang['en']['L0018'] = "User Profile";#php
+$lang['en']['L0019'] = "Table Part";#php
+$lang['en']['L0020'] = "Log out";#php
+$lang['en']['L0021'] = "ORDER DATA";#php
+$lang['en']['L0022'] = "Normal Order";#php
+$lang['en']['L0023'] = "Requested Due Date Order";#php
+$lang['en']['L0024'] = "Urgent Order";#php
+$lang['en']['L0025'] = "Advance Order";#php
+$lang['en']['L0026'] = "History";#php
+$lang['en']['L0027'] = "SUMMARY ORDER";#php
+$lang['en']['L0028'] = "Detail Summary";#php
+$lang['en']['L0029'] = "By Product";#php
+$lang['en']['L0030'] = "By Purchase Order";#php
+$lang['en']['L0031'] = "By Part Number";#php
+#error message
+$lang['en']['W0007'] = "Are you sure you want to delete?"; #javascript
+
+#Print screen - NEW NORMAL ORDER , NEW REQUESTED DUE DATE ORDER , NEW URGENT ORDER , NEW REGULAR ORDER
+$lang['en']['L0032'] = "NEW NORMAL ORDER";#php
+$lang['en']['L0033'] = "New Requested Due Date Order";#php
+
+$lang['en']['M0001'] = "Order Menu<br/>(Non Denso)";
+$lang['en']['M0002'] = "Supplier Catalogue";
+$lang['en']['M0003'] = "Order History Report";
+$lang['en']['M0004'] = "History";
+
+$lang['en']['L0034'] = "New Urgent Order";#php
+$lang['en']['L0035'] = "New Regular Order";#php
+$lang['en']['L0036'] = "All form fields are required";#php
+$lang['en']['L0037'] = "Customer Number";#php
+$lang['en']['L0038'] = "Customer Name";#php
+$lang['en']['L0039'] = "DENSO Order Number";#php
+$lang['en']['L0040'] = "Order Date";#php
+$lang['en']['L0041'] = "Order Type";#php
+$lang['en']['L0042'] = "PO Number";#php
+$lang['en']['L0043'] = "Ship To";#php
+$lang['en']['L0044'] = "save Order Header";#php
+$lang['en']['L0045'] = "Cancel";#php
+#error message -  NEW NORMAL ORDER , NEW REQUESTED DUE DATE ORDER , NEW URGENT ORDER , NEW REGULAR ORDER
+$lang['en']['W0008'] = "Length of PO number must be between 2 and 10.";#javascript
+
+
+//AWS
+$lang['en']['M0009'] = "2 <sup>nd</sup> Customer Approval";
+$lang['en']['M0010'] = "Leadtime Setting";
+$lang['en']['M0011'] = "2 <sup>nd</sup> Customer Group MA";
+$lang['en']['M0012'] = "2 <sup>nd</sup> Customer Sales Condition MA(DENSO)";
+$lang['en']['M0013'] = "2 <sup>nd</sup> Customer Sales Condition MA(NON-DENSO)";
+$lang['en']['M0014'] = "2 <sup>nd</sup> Customer Summary Order";
+/* --------------------------------------------------------------------------------------- */
+
+
+/* order2_new.php */
+#Print screen 20
+$lang['en']['L0046'] = "Ordering";#php
+$lang['en']['L0047'] = "User Profile";#php
+$lang['en']['L0048'] = "Table Part";#php
+$lang['en']['L0049'] = "Log out";#php
+$lang['en']['L0050'] = "Customer Number";#php
+$lang['en']['L0051'] = "Ship To";#php
+$lang['en']['L0052'] = "Order Date";#php
+$lang['en']['L0053'] = "PO Number";#php
+$lang['en']['L0054'] = "Order Type";#php
+$lang['en']['L0055'] = "Customer Name";#php
+$lang['en']['L0056'] = "Denso Order Number";#php
+$lang['en']['L0057'] = "Save order entry";#php
+$lang['en']['L0058'] = "Close order entry";#php
+$lang['en']['L0059'] = "Set";#php
+$lang['en']['L0060'] = "Part Number";#php
+$lang['en']['L0061'] = "QTY.";#php
+$lang['en']['L0293'] = "Order Qty";#php
+$lang['en']['L0062'] = "CURR.";#php
+$lang['en']['L0063'] = "Price";#php
+$lang['en']['L0064'] = "Amount";#php
+$lang['en']['L0065'] = "Due Date<br>(DD-MM-YY)";#php
+$lang['en']['L0295'] = "Error Messager!";#php
+$lang['en']['L0305'] = "Edit Record";#php
+
+
+
+#warning 4
+$lang['en']['G0001'] = "Select items will be permanently deleted and cannot be recovered. Are you sure?";
+$lang['en']['G0002'] = "Do you want to close without saving?";
+$lang['en']['G0003'] = "Please at least select 1 document to delete!";
+$lang['en']['G0004'] = "There are no Transaction to save, Please use close button!";
+$lang['en']['G0009'] = "Lengthss of Part Number must be between 2 and 15.";
+$lang['en']['G0010'] = "please at least select 1 document to edit!";
+$lang['en']['G0012'] = "กรุณากดปุ่ม ปิดการสั่งซื้อ เพื่อออกจากเมนู ";
+
+#dialog box 9
+$lang['en']['L0066'] = "New Normal Order";#php
+$lang['en']['L0067'] = "New Requested Due Date Order";#php
+$lang['en']['L0068'] = "New Urgent Order";#php
+$lang['en']['L0069'] = "Part Number";
+$lang['en']['L0070'] = "Order Qty";
+$lang['en']['L0071'] = "Stock Availiability";
+$lang['en']['L0072'] = "MTO";
+$lang['en']['L0073'] = "Sales Lot Size";
+$lang['en']['L0074'] = "Check Part Info";
+$lang['en']['L0075'] = "Save Order Detail";
+$lang['en']['L0076'] = "Cancel";
+$lang['en']['L0077'] = "Delete selected";
+$lang['en']['L0288'] = "Yes";
+$lang['en']['L0289'] = "No";
+
+#error message 5
+$lang['en']['W0009'] = "Please key in part no to check";
+$lang['en']['W0010'] = "Qty should be greater than 0";
+$lang['en']['W0011'] = "Press here to load Part No";
+$lang['en']['W0025'] = "Error: Qty should be filled by numeric";
+$lang['en']['W0023'] = "Qty field only allow : 0-9";
+
+$lang['en']['E0001'] = "Error : Order Not in Lot Size!, Lot Size = 2";
+$lang['en']['E0002'] = "Error : Item master was not found. Please contact DSTH";
+$lang['en']['E0023'] = "Error: Order Part No is found already";
+
+
+//$lang['en']['E0011'] = "Edit Record";
+//$lang['en']['E0012'] = "Error Messahe!";
+//$lang['en']['E0016'] = "Please at least select 1 document to edit!";
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+
+
+#profile.php
+#Print screen
+$lang['en']['L0078'] = "Ordering";#php
+$lang['en']['L0079'] = "User Profile";#php
+$lang['en']['L0080'] = "Table Part";#php
+$lang['en']['L0081'] = "Log out";#php
+//$lang['en']['L0082'] = "User Profile";
+$lang['en']['L0083'] = "Customer Number";#php
+$lang['en']['L0084'] = "Customer Name";#php
+$lang['en']['L0085'] = "Change Password";#php
+$lang['en']['L0086'] = "Old Password";#php
+$lang['en']['L0087'] = "Old Password Confirmation";#php
+$lang['en']['L0088'] = "New Password";#php
+$lang['en']['L0089'] = "Change Password";#php
+#error message
+$lang['en']['W0012'] = "*Required field"; #javascript
+$lang['en']['W0013'] = "Old Password and Confirmed does not match"; #javascript
+
+$lang['en']['G0014'] = "Request for Change Password!";
+$lang['en']['G0015'] = "Your Password has been change";
+$lang['en']['G0016'] = "Return to Main screen";
+
+
+
+/* ---------------------------------------------------------------------------------------------- */
+
+
+
+#main_item.php 
+#Print screen
+$lang['en']['L0090'] = "Ordering";
+$lang['en']['L0091'] = "User Profile";
+$lang['en']['L0092'] = "Table Part";
+$lang['en']['L0093'] = "Log out";
+$lang['en']['L0094'] = "Customer Number";
+$lang['en']['L0095'] = "Customer Name";
+$lang['en']['L0096'] = "Part Number";
+$lang['en']['L0097'] = "Part Name";
+$lang['en']['L0098'] = "Product";
+$lang['en']['L0099'] = "Sub Product";
+$lang['en']['L0100'] = "Lot Size";
+$lang['en']['L0101'] = "Currency";
+$lang['en']['L0102'] = "Price";
+$lang['en']['L0103'] = "Previous";
+$lang['en']['L0104'] = "Next";
+$lang['en']['L0105'] = "Search";
+$lang['en']['L0106'] = "Search Option";
+$lang['en']['L0107'] = "Part Number";
+$lang['en']['L0295'] = "Description";
+$lang['en']['L0296'] = "Product";
+$lang['en']['L0297'] = "equals";
+$lang['en']['L0108'] = "contains";
+$lang['en']['L0109'] = "Search";
+$lang['en']['L0111'] = "Cancel";
+$lang['en']['L0303'] = "Search";#php
+$lang['en']['L0304'] = "Export to XLS";#
+
+#warning
+$lang['en']['W0014'] = "Please choose field to search";
+$lang['en']['W0015'] = "Please choose criteria to search";
+$lang['en']['W0016'] = "Please fill description to search";
+
+/* ------------------------------------------------------------------------------------------- */
+
+
+
+#history.php 
+#Print screen
+$lang['en']['L0112'] = "Ordering";
+$lang['en']['L0113'] = "User Profile";
+$lang['en']['L0114'] = "Table Part";
+$lang['en']['L0116'] = "Log out";
+$lang['en']['L0117'] = "ORDER DATA";
+$lang['en']['L0118'] = "Normal Order";
+$lang['en']['L0119'] = "Requested Due Date Order";
+$lang['en']['L0120'] = "Urgent Order";
+$lang['en']['L0121'] = "Advance Order";
+$lang['en']['L0122'] = "History";
+$lang['en']['L0123'] = "SUMMARY ORDER";
+$lang['en']['L0124'] = "Detail Summary";
+$lang['en']['L0125'] = "By Product";
+$lang['en']['L0126'] = "By Purchase Order";
+$lang['en']['L0127'] = "By Part Number";
+$lang['en']['L0300'] = "Order Type";
+$lang['en']['L0301'] = "All";
+$lang['en']['L0128'] = "Customer Number";
+$lang['en']['L0129'] = "Customer Name";
+$lang['en']['L0130'] = "Order Date";
+$lang['en']['L0131'] = "PO Number";
+$lang['en']['L0132'] = "DENSO Order Number";
+$lang['en']['L0133'] = "Ship To";
+$lang['en']['L0134'] = "Type";
+$lang['en']['L0135'] = "Action";
+$lang['en']['L0136'] = "Print";
+
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+
+
+#prtorderpdf.php 
+#Print screen
+$lang['en']['L0137'] = "DEALER ORDER";
+$lang['en']['L0138'] = "Customer";
+$lang['en']['L0139'] = "Ship To";
+$lang['en']['L0140'] = "P.O Number";
+$lang['en']['L0141'] = "Order No";
+$lang['en']['L0142'] = "Order Type";
+$lang['en']['L0143'] = "Order Date";
+$lang['en']['L0144'] = "Part Number";
+$lang['en']['L0145'] = "Part Name";
+$lang['en']['L0146'] = "Qty";
+$lang['en']['L0147'] = "Price(TB)";
+$lang['en']['L0148'] = "Total(TB)";
+
+
+
+/* ------------------------------------------------------------------------------- */
+
+
+#import_order_new.php 
+#Print screen
+$lang['en']['L0149'] = "Ordering";#php
+$lang['en']['L0150'] = "User Profile";#php
+$lang['en']['L0151'] = "Table Part";#php
+$lang['en']['L0152'] = "Log out";#php
+$lang['en']['L0153'] = "ORDER DATA";#php
+$lang['en']['L0154'] = "Normal Order";#php
+$lang['en']['L0155'] = "Requested Due Date Order";#php
+$lang['en']['L0156'] = "Urgent Order";#php
+$lang['en']['L0157'] = "Advance Order";#php
+$lang['en']['L0158'] = "History";#php
+$lang['en']['L0159'] = "SUMMARY ORDER";#php
+$lang['en']['L0160'] = "Detail Summary";#php
+$lang['en']['L0161'] = "By Product";#php
+$lang['en']['L0162'] = "By Purchase Order";#php
+$lang['en']['L0163'] = "By Part Number";#php
+$lang['en']['L0164'] = "Normal Order Upload";#php
+$lang['en']['L0290'] = "Requested Due Date Order Upload";#php
+$lang['en']['L0291'] = "Urgent Order Upload";#php
+$lang['en']['L0292'] = "Advance Order Upload";#php
+$lang['en']['L0165'] = "Customer Number";#php
+$lang['en']['L0166'] = "Ship To";#php
+$lang['en']['L0167'] = "Order Type";#php
+$lang['en']['L0168'] = "Customer Name";#php
+$lang['en']['L0169'] = "Please upload your excel file (.xls) - if you are using excel 2007 and up, you should convert to excel 2003 or above (xls format):";#php
+$lang['en']['L0170'] = "Download format excel here:";#php
+$lang['en']['L0171'] = "Browse...";
+$lang['en']['L0172'] = "Import";
+
+
+$lang['en']['G0011'] = "Ship to should be filled!";
+
+#warning
+$lang['en']['W0017'] = "Please attach upload file!";#javascript
+
+
+#import_new.php 
+#Print screen
+$lang['en']['L0173'] = "Ordering";#php
+$lang['en']['L0174'] = "User Profile";#php
+$lang['en']['L0175'] = "Table Part";#php
+$lang['en']['L0176'] = "Log out";#php
+$lang['en']['L0177'] = "ORDER DATA";#php
+$lang['en']['L0178'] = "Normal Order";#php
+$lang['en']['L0179'] = "Requested Due Date Order";#php
+$lang['en']['L0180'] = "Urgent Order";#php
+$lang['en']['L0181'] = "Advance Order";#php
+$lang['en']['L0182'] = "History";#php
+$lang['en']['L0183'] = "SUMMARY ORDER";#php
+$lang['en']['L0184'] = "Detail Summary";#php
+$lang['en']['L0185'] = "By Product";#php
+$lang['en']['L0186'] = "By Purchase Order";#php
+$lang['en']['L0187'] = "By Part Number";#php
+$lang['en']['L0189'] = "Urgent Order Upload";#php
+$lang['en']['L0190'] = "Time to place order for today delivery is over.";
+$lang['en']['L0191'] = "Customer Number";#php
+$lang['en']['L0192'] = "Customer Name";#php
+$lang['en']['L0193'] = "Import finished";#php
+$lang['en']['L0194'] = "Total Record";#php
+
+$lang['en']['L0197'] = "Order Date";
+$lang['en']['L0198'] = "PO Number";
+$lang['en']['L0199'] = "Part Number";
+$lang['en']['L0200'] = "QTY";
+$lang['en']['L0201'] = "Error Description";
+$lang['en']['L0202'] = "Proceed to Upload";
+$lang['en']['L0203'] = "Cancel";
+
+#error
+$lang['en']['W0021'] = "Warning (can be uploaded)";#php
+$lang['en']['E0017'] = "Error (cannot be uploaded)";#php
+
+$lang['en']['E0020'] = "Not in Lot size!<br/>";
+$lang['en']['E0021'] = "Error: Qty should be filled by numeric and greater than 0!<br/>";#php
+$lang['en']['E0003'] = "Error : Only 1 PO Number allowed!<br/>";#php
+$lang['en']['E0004'] = "Error : PO Number has been found in order history!<br/>";#php
+$lang['en']['E0005'] = "Error: Can not input urgent order on Holiday. Please contact DSTH<br/>";
+$lang['en']['E0006'] = "Error: Calender was not found, Please contact DSTH<br/>";
+$lang['en']['E0007'] = "Error: This is a Phase Out Part. Please contact DSTH<br/>";#php
+$lang['en']['E0008'] = "Error: Sales Price was not found. Please contact DSTH<br/>";#php
+$lang['en']['E0009'] = "Error: Item master was not found. Please contact DSTH<br/>";#php
+$lang['en']['E0010'] = "Error: PO should be filled and not more than 10 digits !<br/>";#php
+$lang['en']['E0011'] = "Error: Duplicate Part Number<br/>";#php
+$lang['en']['E0012'] = "Error Description<br/>";#php
+$lang['en']['E0013'] = "You should select excel file and not more than 2 mb";#php
+$lang['en']['E0014'] = "PLEASE AMEND YOUR PO BY REMOVING ABOVE PART NUMBER FROM EXCEL FILE AND TRY TO UPLOAD AGAIN";#php
+$lang['en']['E0018'] = "SYSTEM WILL ONLY PROCESS YOUR PO WHEN ALL PART NUMBER ARE REGISTERED IN DIAS WITH SALES PRICE";#php
+$lang['en']['E0019'] = "PLEASE TAKE NOTE, ONLY 1 PO NUMBER ALLOWED FOR 1 UPLOAD FILE";#php
+$lang['en']['E0022'] = "You are ordering a non-stock item, DSTH will contact you shortly";#php
+$lang['en']['E0033'] = "Error : This partno can not be sold!<br>";#php
+
+
+//$lang['en']['error_you_are_ordering_non_stock_item'] = "Error : You are ordering a non-stock item, DSTH will contact you shortly";
+//$lang['en']['message_from_webpage'] = "Message from webpage";
+//$lang['en']['please_attach_ypload_file'] = "Please attach upload file!";
+//$lang['en']['ok'] = "OK";
+//$lang['en']['system_will_only_process_your_po_when_all_part_number_are_registered_in_dias_with_sales_price'] = "SYSTEM WILL ONLY PROCESS YOUR PO WHEN ALL PART NUMBER ARE REGISTERED IN DIAS WITH SALES PRICE";
+//$lang['en']['please_take_note_only_1_po_number_allowed_for_1_upload_file'] = "PLEASE TAKE NOTE, ONLY 1 PO NUMBER ALLOWED FOR 1 UPLOAD FILE";
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+#mainrpt.php 
+$lang['en']['L0204'] = "Ordering";#php
+$lang['en']['L0205'] = "User Profile";#php
+$lang['en']['L0206'] = "Table Part";#php
+$lang['en']['L0207'] = "Log out";#php
+$lang['en']['L0208'] = "Customer Number";#php
+$lang['en']['L0209'] = "Customer Name";#php
+$lang['en']['L0210'] = "Order Date From";#php
+$lang['en']['L0211'] = "Order Date To";#php
+$lang['en']['L0212'] = "Find";#php
+$lang['en']['L0213'] = "Search";#php
+$lang['en']['L0214'] = "Export to XLSX";
+$lang['en']['L0215'] = "Part Number";#php
+$lang['en']['L0216'] = "Part Name";#php
+$lang['en']['L0217'] = "PO Number";#php
+$lang['en']['L0298'] = "equals";
+$lang['en']['L0299'] = "contains";
+$lang['en']['L0218'] = "Ship To";#php
+$lang['en']['L0219'] = "Order Date";#php
+$lang['en']['L0220'] = "Due Date";
+$lang['en']['L0221'] = "Qty";#php
+$lang['en']['L0222'] = "User";#php
+$lang['en']['L0223'] = "Previous";#php
+$lang['en']['L0224'] = "Next";#php
+$lang['en']['L0225'] = "Search";#php
+#warning
+$lang['en']['G0005'] = "Date to should be greater than date from!";#javascript
+#error
+$lang['en']['W0018'] = "Please choose field to search";#javascript
+$lang['en']['W0019'] = "Please choose criteria to search";#javascript
+$lang['en']['W0020'] = "Please fill description to search";#javascript
+
+
+
+/* ----------------------------------------------------------------------------------- */
+
+#mainrptproduct.php 
+#print screen
+//$lang['en']['denso'] = "DENSO";
+$lang['en']['L0226'] = "Ordering";#php
+$lang['en']['L0227'] = "User Profile";#php
+$lang['en']['L0228'] = "Table Part";#php
+$lang['en']['L0229'] = "Log out";#php
+$lang['en']['L0230'] = "Customer Number";#php
+$lang['en']['L0231'] = "Customer Name";#php
+$lang['en']['L0232'] = "Order Date From";#php      
+$lang['en']['L0233'] = "Order Date To";#php
+$lang['en']['L0234'] = "Find";#php
+$lang['en']['L0235'] = "QTY";#php
+$lang['en']['L0236'] = "AMOUNT";#php
+$lang['en']['L0237'] = "GRAND TOTAL";#php
+$lang['en']['L0238'] = "Product";#php
+$lang['en']['L0239'] = "Subproduct";#php
+$lang['en']['L0240'] = "PO Number";#php
+$lang['en']['L0241'] = "Order Date";#php
+$lang['en']['L0242'] = "Qty";#php
+$lang['en']['L0243'] = "Amount";#php
+
+#error
+$lang['en']['G0006'] = "Date to should be greater than date from!";#javascript
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+#mainrptpo.php 
+#print screen
+$lang['en']['L0244'] = "Ordering";#php
+$lang['en']['L0245'] = "User Profile";#php
+$lang['en']['L0246'] = "Table Part";#php
+$lang['en']['L0247'] = "Log out";#php
+$lang['en']['L0248'] = "Customer Number";#php
+$lang['en']['L0249'] = "Customer Name";#php
+$lang['en']['L0250'] = "Order Date From";#php
+$lang['en']['L0251'] = "Order Date To";#php
+$lang['en']['L0252'] = "PO Number";#
+$lang['en']['L0253'] = "Export to XLS";
+$lang['en']['L0254'] = "GRAND TOTAL";#php
+$lang['en']['L0255'] = "QTY";#php
+$lang['en']['L0256'] = "AMOUNT";#php
+$lang['en']['L0257'] = "AMOUNT CURRENCY";
+$lang['en']['L0258'] = "PO Number";#php
+$lang['en']['L0259'] = "Subproduct";#php
+$lang['en']['L0260'] = "Order Type";#php
+$lang['en']['L0261'] = "Order Date";#php
+$lang['en']['L0262'] = "Qty";#php
+$lang['en']['L0263'] = "Amount (TB)";#php
+$lang['en']['L0264'] = "Due Date";
+#warning
+$lang['en']['G0007'] = "Date to should be greater than date from!";#javascript
+
+
+
+/* --------------------------------------------------------------------- */
+
+
+#mainrptitem.php 
+#print screen
+$lang['en']['L0265'] = "Ordering";#php
+$lang['en']['L0266'] = "User Profile";#php
+$lang['en']['L0267'] = "Table Part";#php
+$lang['en']['L0268'] = "Log out";#php
+$lang['en']['L0269'] = "Customer Number";#php
+$lang['en']['L0270'] = "Customer Name";#php
+$lang['en']['L0271'] = "Order Date From";#php
+$lang['en']['L0272'] = "Order Date To";#php
+$lang['en']['L0273'] = "Part Number";
+$lang['en']['L0274'] = "Find";#php
+$lang['en']['L0275'] = "GRAND TOTAL";#php
+$lang['en']['L0276'] = "QTY";#php
+$lang['en']['L0277'] = "AMOUNT";#php
+$lang['en']['L0278'] = "AMOUNT CURRENCY";
+$lang['en']['L0279'] = "GRAND TOTAL";#php
+$lang['en']['L0280'] = "Part Number";#php
+$lang['en']['L0281'] = "Product";#php
+$lang['en']['L0282'] = "Subproduct";#php
+$lang['en']['L0283'] = "PO Number";#php
+$lang['en']['L0284'] = "Order Date";#php
+$lang['en']['L0285'] = "Qty";#php
+$lang['en']['L0286'] = "Amount (TB)";#php
+$lang['en']['L0287'] = "Due Date";
+#error
+$lang['en']['G0008'] = "Date to should be greater than date from!";#javascript
+
+#checkIsHoliday.php
+$lang['en']['E0035'] = "Error: Selected Due Date on DENSO Holiday";
+
+#checkMTO.php
+$lang['en']['W0024'] = "Warning: You are ordering a MTO item, DSTH will contact you shortly";
+$lang['en']['E0024'] = "Error: You are ordering a MTO item, DSTH will contact you shortly";
+
+#checkStock.php
+$lang['en']['E0025'] = "Error: You are ordering a non-stock item. Please contact DSTH";
+$lang['en']['W0026'] = "Warning: You are ordering a non-stock item, DSTH will contact you shortly";
+$lang['en']['E0036'] = "Error: You are ordering a non-stock item. Please contact DSTH";
+$lang['en']['W0027'] = "Warning: You are ordering a non-stock item, DSTH will contact you shortly";
+
+#chklogin.php
+$lang['en']['G0013'] = "Another user login using your account!!";
+
+#getDueDate.php
+$lang['en']['E0026'] = "Error: Calender was not found, Please contact DSTH";
+
+#getRequestDueDate.php
+$lang['en']['E0027'] = "Error: Calender was not found, Please contact DSTH";
+
+#getUrgentDueDate.php
+$lang['en']['E0028'] = "Error: Can not input urgent order on Holiday. Please contact DSTH";
+$lang['en']['E0029'] = "Error: Calender was not found, Please contact DSTH";
+
+#getUrgentOrderQty.php
+$lang['en']['E0029'] = "Error: Ordered Qty should be less than 5 or try again after 10:00 AM";
+$lang['en']['E0030'] = "Error: You are only allowed to order ";
+$lang['en']['E0031'] = " or try again after 10:00 AM";
+$lang['en']['E0032'] = "Error: Ordered Qty should be less than 20 for Part Dealer";
+
+/* --------------------------------------------------------------------- */
+
+#supcata_cataloguemain.php
+$lang['en']['L0440'] = "Select Brand";
+
+
+
+#supmainrpt.php
+$lang['en']['L0441'] = "Customer Code";
+$lang['en']['L0442'] = "Supplier Code";
+
+
+#supcata_cataloguemain.php
+$lang['en']['L0443'] = "Supplier";
+$lang['en']['L0444'] = "Select Supplier";
+
+$lang['en']['L0445'] = "Brand";
+$lang['en']['L0446'] = "VIN Code";
+$lang['en']['L0447'] = "Stock";
+$lang['en']['L0448'] = "Standard Price";
+
+
+
+$lang['en']['L0449'] = "Please select";
+$lang['en']['L0450'] = "Upload";
+$lang['en']['L0451'] = "Supplier Number";
+$lang['en']['L0452'] = "Supplier Name";
+$lang['en']['L0453'] = "Supplier Part No.";
+$lang['en']['L0454'] = "Shipping Day (ETD)";
+$lang['en']['E0060'] = "No Data Found....";
+$lang['en']['L0455'] = "Supplier Part No.";
+
+
+
+//Menu Supplier
+$lang['en']['MH01'] = "SUPPLIER";
+$lang['en']['MH02'] = "SUMMARY ORDER";
+$lang['en']['M005'] = "Customer Detail";
+$lang['en']['M006'] = "Sale Price";
+$lang['en']['M007'] = "Catalogue Maintenance";
+$lang['en']['M008'] = "Stock";
+$lang['en']['M009'] = "Announcement";
+$lang['en']['M010'] = "Order History";
+
+#supmaincus
+$lang['en']['L0456'] = "Search Information";
+$lang['en']['L0457'] = "Company Code";
+$lang['en']['L0458'] = "Customer";
+$lang['en']['L0459'] = "Shipto";
+$lang['en']['L0460'] = "Customer Name";
+$lang['en']['L0461'] = "Address1";
+$lang['en']['L0462'] = "Address2";
+$lang['en']['L0463'] = "Address3";
+
+
+
+$lang['en']['L0464'] = "Item Number";
+$lang['en']['L0465'] = "Currency";
+$lang['en']['L0466'] = "Sales Price";
+$lang['en']['L0467'] = "Action";
+
+$lang['en']['L0468'] = "Download format csv here:";
+
+$lang['en']['L0469'] = "Only CSV file is allowed.";
+$lang['en']['L0470'] = "File type";
+$lang['en']['L0471'] = "First row for header";
+$lang['en']['L0472'] = "File type";
+$lang['en']['L0473'] = "Yes";
+$lang['en']['L0474'] = "No";
+$lang['en']['L0475'] = "Add and Replace Partial";
+$lang['en']['L0476'] = "Replace All (Delete All first)";
+$lang['en']['L0477'] = "Submit";
+$lang['en']['L0479'] = "Note : System will delete all existing records at frist and then upload all records from CSV";
+$lang['en']['L0478'] = "Reset";
+
+
+$lang['en']['E0061'] = "Error : Only CSV file is allowed,please download CSV format and upload again";
+
+
+#Announcement
+$lang['en']['L0480'] = "Title";
+$lang['en']['L0481'] = "Detail";
+$lang['en']['L0482'] = "Customer Number";
+$lang['en']['L0483'] = "Effective Date From";
+$lang['en']['L0484'] = "Effective Date To";
+$lang['en']['L0485'] = "Update By";
+$lang['en']['L0486'] = "Picture(Size: 855x153 pixel)";
+$lang['en']['L0487'] = "Save";
+$lang['en']['L0488'] = "* = required";
+$lang['en']['L0489'] = "view all";
+$lang['en']['L0490'] = "Add New";
+$lang['en']['L0491'] = "Update";
+$lang['en']['L0492'] = "Due Date";
+$lang['en']['L0493'] = "Order Date From";
+$lang['en']['L0494'] = "Order Date To";
+$lang['en']['L0495'] = "All Announcement";
+$lang['en']['L0496'] = "Update Date";
+$lang['en']['L0497'] = "Find";
+
+
+
+$lang['en']['L0498'] = "Car Information";
+$lang['en']['L0499'] = "Genuine Part No. Information";
+$lang['en']['L0500'] = "Order Part No. Information";
+$lang['en']['L0501'] = "Car Maker";
+$lang['en']['L0502'] = "Model Name";
+$lang['en']['L0503'] = "VIN Code ";
+$lang['en']['L0504'] = "Model Code ";
+$lang['en']['L0505'] = "Engine Code";
+$lang['en']['L0506'] = "CC.";
+$lang['en']['L0507'] = "Start Date (dd/mm/yyyy)";
+$lang['en']['L0508'] = "End Date (dd/mm/yyyy)";
+$lang['en']['L0509'] = "Genuine Part No. ";
+$lang['en']['L0510'] = "Supplier Part No.";
+$lang['en']['L0511'] = "Part Name";
+$lang['en']['L0512'] = "Product Brand";
+$lang['en']['L0513'] = "Order Part No.";
+$lang['en']['L0514'] = "Lot size";
+$lang['en']['L0515'] = "Stock info ";
+$lang['en']['L0516'] = "Remark";
+$lang['en']['L0517'] = "Stock/Non Stock Item";
+$lang['en']['L0518'] = "Part Picture";
+$lang['en']['L0519'] = "QTY";
+
+
+$lang['en']['W9001'] = "Please Enter Title";
+$lang['en']['W9002'] = "Please Enter Detail";
+$lang['en']['W9003'] = "Please Input Customer";
+$lang['en']['W9004'] = "Please Enter Start Date";
+$lang['en']['W9005'] = "Please Enter End Date";
+$lang['en']['W9006'] = "Please Enter Update by";
+$lang['en']['W9007'] = "Please Select Image File";
+$lang['en']['W9008'] = "Sorry, your file is too large.";
+$lang['en']['W9009'] = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+$lang['en']['W9010'] = "new record succesfully inserted ...";
+$lang['en']['W9011'] = "error while inserting....";
+$lang['en']['W9012'] = "Please type Title";
+$lang['en']['W9013'] = "Please type detail";
+$lang['en']['W9014'] = "yyyy/mm/dd";
+$lang['en']['W9015'] = "Enter Name";
+
+$lang['en']['W9016'] = "Please Enter Car Maker";
+$lang['en']['W9017'] = "Please Enter Model Name";
+$lang['en']['W9018'] = "Please Enter Model Code";
+$lang['en']['W9019'] = "Please Enter Part Name";
+$lang['en']['W9020'] = "Please Enter Product Brand";
+$lang['en']['W9021'] = "Please Enter Order Part No.";
+$lang['en']['W9022'] = "Please Enter Lot size more than 0";
+$lang['en']['W9023'] = "Please Enter Lot size";
+$lang['en']['W9024'] = "Length of ";
+$lang['en']['W9025'] = " character.";
+$lang['en']['W9026'] = " must be ";
+$lang['en']['W9027'] = " must be between ";
+$lang['en']['W9028'] = " and ";
+
+
+$lang['en']['E0063'] = "not found shipto";
+$lang['en']['E0064'] = "Error - supprice not found";
+$lang['en']['E0065'] = "Error - supprice found";
+$lang['en']['E0066'] = "Error - supstock  not found";
+$lang['en']['E0067'] = "Error - Order Part No already found";
+$lang['en']['E0068'] = "Error File Type, Only allow CSV File";
+$lang['en']['E0069'] = "Duplicate Data, Please Recheck again";
+$lang['en']['E0070'] = "Note : Data not upload to system";
+$lang['en']['E0071'] = " connot be null,Please Recheck again";
+$lang['en']['E0072'] = " Error: Duplicate Part Number ,Please Recheck again";
+$lang['en']['E0073'] = " Error: Duplicate Part Number  and Customer No and Shipto ,Please Recheck again ";
+$lang['en']['E0074'] = "LotSize should more than 0, Please Recheck again";
+$lang['en']['E0075'] = "Please Recheck again";
+$lang['en']['E0076'] = "Error -customer  not found";
+$lang['en']['E0077'] = "Price should be Numeric value";
+$lang['en']['E0078'] = "connot be null";
+$lang['en']['E0079'] = " Error : Only XLS file is allowed, please download XLS format and upload again.";
+
+$lang['en']['L0520'] = "partno";
+$lang['en']['L0521'] = "Upload again";
+$lang['en']['L0522'] = "Cusno";
+$lang['en']['L0523'] = "curr";
+$lang['en']['L0524'] = "price";
+$lang['en']['L0525'] = "shipto";
+$lang['en']['L0526'] = "OwnerComp";
+$lang['en']['L0527'] = "Do you want to Upload data?";
+$lang['en']['L0528'] = "Supplier Upload";
+$lang['en']['L0529'] = "Add New Record";
+$lang['en']['L0530'] = "Edit Record";
+$lang['en']['L0531'] = "Part Catalogue Maintenance (Add New)";
+$lang['en']['L0532'] = "Part Catalogue Maintenance (Update)";
+
+
+$lang['en']['L0533'] = "Enter Car Maker";
+$lang['en']['L0534'] = "Enter Model Name";
+$lang['en']['L0535'] = "Enter VIN Code";
+$lang['en']['L0536'] = "Enter Model Code";
+$lang['en']['L0537'] = "Enter Engine Code";
+$lang['en']['L0538'] = "Enter Cc.";
+$lang['en']['L0539'] = "Enter Start Date";
+$lang['en']['L0540'] = "Enter End Date";
+$lang['en']['L0541'] = "Enter Genuine Part No.";
+$lang['en']['L0542'] = "Enter Supplier Part No.";
+$lang['en']['L0543'] = "Enter Part Name";
+$lang['en']['L0544'] = "Enter Product Brand";
+$lang['en']['L0545'] = "Enter Order Part No.";
+$lang['en']['L0546'] = "Enter Lot size";
+$lang['en']['L0547'] = "Enter Remark";
+$lang['en']['L0548'] = "All form fields are required.";
+$lang['en']['L0549'] = "Successfully Updated ...";
+$lang['en']['L0550'] = "Sorry Data Could Not Updated !";
+
+
+$lang['en']['L0551'] = "Supplier Part Catalogue";
+$lang['en']['L0552'] = "Customer Name";
+$lang['en']['L0553'] = "All";
+$lang['en']['L0554'] = "The removed customer will no longer show this anouncement";
+$lang['en']['L0555'] = "Please select customer";
+$lang['en']['L0556'] = "Ship Date";
+$lang['en']['L0557'] = "Ship qty";
+$lang['en']['L0558'] = "Invoice No";
+$lang['en']['L0559'] = "Status";
+$lang['en']['L0561'] = "List (Base) Price";
+$lang['en']['L0562'] = "Discount Ratio";
+$lang['en']['L0563'] = "Actual Sales Price";
+
+
+$lang['en']['W0029'] = "Customer Number & 1st Customer is the same, Please check data again";
+$lang['en']['L0564'] = "Order Approve Status";
+$lang['en']['W0030'] = "* If uncheck means this item will not sell to those 2nd Customer Group";
+$lang['en']['L0565'] = "Shipping Day (ETD)";
+
+$lang['en']['L0566'] = "Pending";
+$lang['en']['L0567'] = "Grand Total";
+$lang['en']['L0568'] = "Quantity";
+$lang['en']['L0569'] = "Amount";
+$lang['en']['L0570'] = "AWS";
+$lang['en']['L0571'] = "Denso Order No.";
+
+$lang['en']['L0572'] = "AWS Curr";
+$lang['en']['L0573'] = "AWS Price";
+$lang['en']['L0574'] = "Dealer Curr";
+$lang['en']['L0575'] = "Dealer Price";
+$lang['en']['L0576'] = "Error Message";
+
+$lang['en']['L0577'] = "(Direct ship from supplier)";
+$lang['en']['L0578'] = "(Ship from own warehouse)";
+
+$lang['en']['L0579'] = "Approve 1";
+$lang['en']['L0580'] = "Approve 2";
+$lang['en']['L0581'] = "Reject";
+
+$lang['en']['L0582'] = "1 <sup>st</sup> Customer Standard Leadtime(Day)";
+$lang['en']['L0583'] = "Calendar";
+$lang['en']['L0584'] = "Standard Leadtime";
+$lang['en']['L0585'] = "Day(s)";
+$lang['en']['L0586'] = "Check Holiday";
+$lang['en']['L0587'] = "Not Check Holiday";
+$lang['en']['L0588'] = "2 <sup>nd</sup> Customer Code";
+$lang['en']['L0589'] = "Customer Group";
+$lang['en']['L0590'] = "2 <sup>nd</sup> Customer Group";
+$lang['en']['L0591'] = "Customer CD.";
+$lang['en']['L0592'] = "1 <sup>st</sup>Customer Code";
+$lang['en']['L0593'] = "Ship to address";
+$lang['en']['L0594'] = "1 <sup>st</sup>Customer Ship to Code";
+$lang['en']['L0595'] = "2 <sup>nd</sup>Customer Ship to Code";
+$lang['en']['L0596'] = "2 <sup>nd</sup>Customer Name";
+$lang['en']['L0597'] = "Condition";
+$lang['en']['L0598'] = "Please Search Data";
+$lang['en']['L0599'] = "Ship to Code";
+$lang['en']['L0600'] = "Address";
+$lang['en']['L0601'] = "Ship From";
+
+$lang['en']['E0081'] = "Error : customer ship to code not found in aws customer master. Please contact Denso PIC";
+$lang['en']['E0082'] = "Error : customer ship to code [2nd customer ship to code] not found in aws customer master. Please contact Denso PIC";
+$lang['en']['E0083'] = "Error : customer ship to code [1st customer ship to code] not found in ship to master. Please contact Denso PIC";
+
+$lang['en']['L0602'] = "Note: The system does not allow to select multiple ship to in one PO, please separate PO for each ship to";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

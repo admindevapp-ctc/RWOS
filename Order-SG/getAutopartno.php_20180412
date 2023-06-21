@@ -1,0 +1,60 @@
+<?php 
+function getpartno($shpno){
+	require('db/conn.inc');
+	$qrycusmas="select * from cusmas where cusno= '$shpno' ";
+	//echo $qrycusmas;
+	$sqlcusmas=mysqli_query($msqlcon,$qrycusmas);		
+	if($hslcusmas = mysqli_fetch_array ($sqlcusmas)){
+		$route=$hslcusmas['route'];
+	}
+	$query='';
+	if(strtoupper($route)=='N'){
+		$query="select a.itnbr as itnbr from sellpriceaws a, qbm008pr b where a.itnbr=b.prtno and a.cusno=b.cusno and b.salavl='YES' and a.itnbr not in (select prtno from mto) and a.cusno=". $shpno." order by a.itnbr";
+	
+	}else{
+		if($ordertype=='Normal'){
+			$query="select a.itnbr as itnbr from sellprice a, qbm008pr b where a.itnbr=b.prtno and a.cusno=b.cusno and b.salavl='YES' ";
+			$query=."and a.itnbr not in (select prtno from mto) and a.cusno=". $shpno." order by a.itnbr";
+		}
+		else if($ordertype=='Urgent'){
+			$query="select a.itnbr as itnbr from sellprice a, qbm008pr b where a.itnbr=b.prtno and a.cusno=b.cusno and b.salavl='YES' ";
+			$query=."and a.itnbr not in (select prtno from mto) and a.cusno=". $shpno." and ";
+			$query=."a.itnbr in (SELECT prtno from hd100pr where l1awqy+l2awqy>1 and prtno not in (select prtno from availablestock where qty>0)" ;
+			$query=."UNION select prtno from availablestock where qty>0";
+		}
+	}
+	//$query=$query . " LIMIT 0, 10";
+	$x=0;
+	$sql=mysqli_query($msqlcon,$query);	
+	$count = mysqli_num_rows($sql);
+	$html="";
+	while($array = mysqli_fetch_array ($sql)){
+		/*if($x==0){ 
+		 	$hsl="[";
+		 	
+		}
+		$x++;
+		$partno =$hasil['Itnbr'];
+		
+		$hsl=$hsl.'{"id":"'.$partno.'", "value":"'.$partno.'"}';
+		if($x<$count){
+			$hsl=$hsl.",";
+		}*/
+		
+		if($x==0){ 
+		 	$html="<option value=''></option>";
+		 	
+		}
+		$x++;
+		$partno =$array['itnbr'];
+		
+		$html=$html."<option value='".$partno."'>".$partno."</option>";
+		
+	}
+
+//$hsl=$hsl."]";
+return $html;
+}
+
+	
+?>

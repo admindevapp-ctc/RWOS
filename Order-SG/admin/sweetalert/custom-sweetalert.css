@@ -1,0 +1,67 @@
+.swal-modal {
+    width: 200px;
+}
+
+.swal-button {
+    font-size: 11px;
+    padding: 1px 6px;
+}
+
+.swal-title {
+    font-size: 12px;
+    padding-top: 0px;
+    margin-bottom: 0px !important;
+}
+
+.swal-footer {
+    margin-top: 0px !important;
+}
+
+/*.swal-icon {
+    margin-top: 13px !important;
+    margin-bottom: 10px !important;
+    width: 40px;
+    height: 40px;
+}*/
+/*
+.swal-icon--warning__body {
+    height: 23px;
+    top: 4px;
+}
+
+.swal-icon--error__line {
+    width: 24px;
+    top: 18px;
+}
+
+.swal-icon--error__line--left {
+    left: 8px;
+}
+
+.swal-icon--error__line--right {
+    right: 8px;
+}
+
+.swal-icon--success__ring {
+    width: 40px;
+    height: 40px;
+}
+
+.swal-icon--success__line--tip {
+    width: 14px;
+    left: 8px;
+    top: 22px;
+}
+
+.swal-icon--success__line--long {
+    width: 23px;
+    right: 3px;
+    top: 19px;
+}
+
+.swal-icon--success__hide-corners {
+    width: 5px;
+    height: 35px;
+    left: 14px;
+    top: 4px;
+}*/

@@ -1,0 +1,1 @@
+CarMaker(12),ModelName(15),VINCode(20),ModelCode(10),EngineCode(10),PrtPic,CC,StartDate,EndDate,Genuine Part No(15),SupplierGenuine Part No(15),PartName(30),ProductBrand(10),Order Part No(15),LotSize(3),Stock Item (Yes =1 or No=0),Remark

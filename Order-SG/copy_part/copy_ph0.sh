@@ -1,0 +1,1 @@
+cd  /opt/lampp/htdocs/Order/Order-SG/copy_part/ && /opt/lampp/bin/php /opt/lampp/htdocs/Order/Order-SG/copy_part/copy_for_ph0.php

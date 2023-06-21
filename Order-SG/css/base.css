@@ -1,0 +1,147 @@
+#navigation{
+	float: right;
+	width: 150px;
+}
+#intro{
+	width: 450px;
+}
+
+body {
+	font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+	color: #3E3E3E;
+	font-size: 12px;
+	background-color: #94C5EB;
+	background-image: url(../images/background-grad.png);
+	background-repeat: repeat-x;
+}
+
+p {
+	padding: 5px;
+}
+
+a {
+	color: #3687AF;
+}
+
+#container{
+	margin:0 auto;
+	text-align: left;
+	width: 650px;
+}
+
+#header{
+	height: 60px;
+	color: #172322;
+	background-color: transparent;
+	background-image: url(../header-corners.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+#header h1
+{
+	padding:0;
+	margin:0;
+}
+
+#content{
+	background-color: #fff;
+	padding: 0 15px 10px 15px;
+
+} 
+
+#footer{
+	background-color: #fff;
+	padding:15px;
+  clear: both;
+}
+
+h2 {
+	border-bottom:2px solid #015287;
+	color: #D15600;
+	padding-top: 10px;
+  margin-top: 0;
+}
+
+table {
+	border-collapse:collapse;
+	font-size:12px;
+	margin:0 20px 20px 20px;
+	border-top:2px solid #015287;
+	width:480px;
+}
+
+th {
+	border-bottom: 2px solid #015287;
+	color: #D15600;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: left;
+	padding: 3px 8px;
+}
+
+td {
+	padding: 6px;
+}
+
+#container {
+  position: relative;
+}
+
+#login {
+	position: absolute;
+	top: 300;
+	right: 10px;
+	padding: 5px;
+	-moz-border-radius: 4px;
+	width: 155px;
+	background-color: #999;
+}
+
+#login form {
+  margin-top: 10px;
+}
+
+#login form label, #login form input {
+  display: block;
+}
+
+#login form button {
+  float: right;
+  margin-top: 10px;
+}
+
+#login a {
+	display: block;
+	text-decoration: none;
+	font-size: 130%;
+	font-weight: bold;
+	height: 20px;
+	padding: 0 20px 0 5px;
+	background-position: right -20px;
+	background-repeat: no-repeat;
+	background-image: url(links.png);
+}
+
+#login a.active {
+  background-position: right 0;
+}
+#message {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: blink;
+	background-color: #FF0000;
+	text-align: center;
+	height: auto;
+	width: auto;
+}
+
+#result {
+	background-color: #FFFF66;
+	border: 1px solid #215800;
+	padding: 10px;
+	width: 400px;
+	text-align: center;
+
+}

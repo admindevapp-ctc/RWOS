@@ -1,0 +1,7 @@
+.swal-overlay {
+    display: none;
+}
+
+.swal-overlay--show-modal {
+    display: block;
+}
